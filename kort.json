@@ -1,0 +1,200 @@
+[
+ {
+  "id": 14,
+  "domene": "rib",
+  "kontekst": "rib.tre",
+  "tema": "Tre — fallgruver",
+  "sporsmal": "Hva er de vanligste fallgruvene i trekonstruksjon du ser — forbindelser, fukt, svill, avstiving?",
+  "hint": "",
+  "type": "tale"
+ },
+ {
+  "id": 15,
+  "domene": "rib",
+  "kontekst": "rib.staal",
+  "tema": "Stål",
+  "sporsmal": "Spesifiserer du alltid både stålkvalitet OG utførelsesklasse (EXC) i RIB-leveransen?",
+  "hint": "NS-EN 1090.",
+  "type": "ja_nei"
+ },
+ {
+  "id": 16,
+  "domene": "rib",
+  "kontekst": "rib.mur",
+  "tema": "Murverk",
+  "sporsmal": "Bruker du fortsatt bærende murverk i nybygg, eller er det i praksis utfaset hos deg?",
+  "hint": "Ja = brukes fortsatt, Nei = utfaset.",
+  "type": "ja_nei"
+ },
+ {
+  "id": 17,
+  "domene": "rib",
+  "kontekst": "rib.grensesnitt.ark",
+  "tema": "Grensesnitt ARK",
+  "sporsmal": "Låser du bærelinjer/akser sammen med ARK før dimensjonering, så modellene ikke driver fra hverandre?",
+  "hint": "",
+  "type": "ja_nei"
+ },
+ {
+  "id": 18,
+  "domene": "rib",
+  "kontekst": "rib.grensesnitt.ark",
+  "tema": "RIB↔ARK",
+  "sporsmal": "Beskriv dragkampen RIB↔ARK i tidligfase. Hvor gir du deg, hvor står du på?",
+  "hint": "",
+  "type": "tale"
+ },
+ {
+  "id": 19,
+  "domene": "rib",
+  "kontekst": "rib.grensesnitt.tekniske",
+  "tema": "Utsparinger",
+  "sporsmal": "Krever du omforent utsparings-/føringsplan før du fryser dekker og bjelker?",
+  "hint": "Mot RIV/RIE.",
+  "type": "ja_nei"
+ },
+ {
+  "id": 20,
+  "domene": "rib",
+  "kontekst": "rib.grensesnitt.tekniske",
+  "tema": "Føringsveier",
+  "sporsmal": "Hvordan koordinerer du utsparinger og føringsveier mot RIV/RIE så det ikke sager i bæringen?",
+  "hint": "",
+  "type": "tale"
+ },
+ {
+  "id": 21,
+  "domene": "rib",
+  "kontekst": "rib.dynamikk",
+  "tema": "Vibrasjon",
+  "sporsmal": "Sjekker du gulvvibrasjon/komfort for slanke dekker (kontor, gangbaner), ikke bare styrke og nedbøyning?",
+  "hint": "",
+  "type": "ja_nei"
+ },
+ {
+  "id": 22,
+  "domene": "rib",
+  "kontekst": "rib.dynamikk",
+  "tema": "Svingninger",
+  "sporsmal": "Når har svingninger/komfort blitt et reelt problem i dine prosjekter, og hva løste det?",
+  "hint": "",
+  "type": "tale"
+ },
+ {
+  "id": 23,
+  "domene": "rib",
+  "kontekst": "rib.byggefase",
+  "tema": "Byggefase",
+  "sporsmal": "Prosjekterer du avstiving og stabilitet i byggefasen (montasje), ikke bare ferdig tilstand?",
+  "hint": "",
+  "type": "ja_nei"
+ },
+ {
+  "id": 24,
+  "domene": "rib",
+  "kontekst": "rib.byggefase",
+  "tema": "Montasjelaster",
+  "sporsmal": "Fortell om laster og stabilitet i byggefasen — kran, opplag, midlertidig avstiving. Hva overses oftest?",
+  "hint": "",
+  "type": "tale"
+ },
+ {
+  "id": 25,
+  "domene": "rib",
+  "kontekst": "rib.utforelse",
+  "tema": "Toleranser",
+  "sporsmal": "Regner du toleransekjeder (sum av avvik) bevisst i grensesnittet prefab ↔ plasstøpt?",
+  "hint": "NS-EN 13670.",
+  "type": "ja_nei"
+ },
+ {
+  "id": 26,
+  "domene": "rib",
+  "kontekst": "rib.miljo",
+  "tema": "Klimagass",
+  "sporsmal": "Er lavkarbonbetong/ombruk nå et førstevalg du aktivt vurderer i hvert bæresystem?",
+  "hint": "NS 3720.",
+  "type": "ja_nei"
+ },
+ {
+  "id": 27,
+  "domene": "rib",
+  "kontekst": "rib.miljo",
+  "tema": "Utslippskutt",
+  "sporsmal": "Hvilke grep kutter klimagass i bæresystemet mest for pengene, etter din erfaring?",
+  "hint": "",
+  "type": "tale"
+ },
+ {
+  "id": 28,
+  "domene": "rib",
+  "kontekst": "rib.kontroll",
+  "tema": "Kontroll",
+  "sporsmal": "Planlegger du uavhengig kontroll (SAK10) fra prosjektstart, ikke som noe som dukker opp sent?",
+  "hint": "",
+  "type": "ja_nei"
+ },
+ {
+  "id": 29,
+  "domene": "rib",
+  "kontekst": "rib.dokumentasjon",
+  "tema": "MMI",
+  "sporsmal": "Bruker du MMI (modenhetsindeks) til å styre hva RIB har låst per fase?",
+  "hint": "",
+  "type": "ja_nei"
+ },
+ {
+  "id": 30,
+  "domene": "rib",
+  "kontekst": "rib.eksisterende",
+  "tema": "Rehab",
+  "sporsmal": "Ved ombygging: krever du oppmåling + kapasitetsvurdering av eksisterende bæring før nye laster legges på?",
+  "hint": "",
+  "type": "ja_nei"
+ },
+ {
+  "id": 31,
+  "domene": "rib",
+  "kontekst": "rib.eksisterende",
+  "tema": "Eldre kapasitet",
+  "sporsmal": "Hvordan vurderer du kapasiteten til eldre konstruksjoner uten original dokumentasjon?",
+  "hint": "",
+  "type": "tale"
+ },
+ {
+  "id": 32,
+  "domene": "rib",
+  "kontekst": "rib.laster",
+  "tema": "Laster",
+  "sporsmal": "Setter du nyttelaster etter faktisk bruk/kategori (NS-EN 1991-1-1), ikke en rund 'trygg' verdi overalt?",
+  "hint": "",
+  "type": "ja_nei"
+ },
+ {
+  "id": 33,
+  "domene": "rib",
+  "kontekst": "rib.laster",
+  "tema": "Undervurderte laster",
+  "sporsmal": "Hvilke laster undervurderes oftest i praksis — snødrift, nyttelast, installasjoner, fasade?",
+  "hint": "",
+  "type": "tale"
+ },
+ {
+  "id": 34,
+  "domene": "rib",
+  "kontekst": "rib.byggbarhet",
+  "tema": "Byggbarhet",
+  "sporsmal": "Tenker du logistikk, kranrekkevidde og elementstørrelser inn i bæresystemet allerede i tidligfase?",
+  "hint": "",
+  "type": "ja_nei"
+ },
+ {
+  "id": 35,
+  "domene": "rib",
+  "kontekst": "rib.byggbarhet",
+  "tema": "Ikke-statiske hensyn",
+  "sporsmal": "Hvilke ikke-statiske hensyn (logistikk, LCC, demonterbarhet, ombruk) former bæresystemvalget ditt?",
+  "hint": "",
+  "type": "tale"
+ }
+]

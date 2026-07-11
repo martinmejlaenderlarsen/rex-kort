@@ -1,0 +1,13 @@
+{
+  "name": "Spørsmålskort",
+  "short_name": "Kort",
+  "start_url": "./kort.html",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#f6efe4",
+  "theme_color": "#2b2620",
+  "orientation": "portrait",
+  "icons": [
+    { "src": "icon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any maskable" }
+  ]
+}

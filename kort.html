@@ -1,0 +1,339 @@
+<!doctype html>
+<html lang="no">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover, maximum-scale=1, user-scalable=no">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="Kort">
+<meta name="theme-color" content="#2b2620">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="apple-touch-icon" href="icon.svg">
+<title>Spørsmålskort</title>
+<script src="config.js"></script>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Inter:wght@400;500;600&display=swap');
+  :root{
+    --bg:#f6efe4; --surface:#fbf7ef; --surface-2:#f1e7d6;
+    --ink:#2b2620; --ink-soft:#6a5f50; --ink-faint:#9a8a72;
+    --line:#e2d6c2; --line-strong:#d3c3a9;
+    --accent:#b5552f; --accent-dark:#8f3f1e; --accent-soft:#f0e2d2;
+    --serif:'Fraunces',Georgia,'Times New Roman',serif;
+    --sans:'Inter',-apple-system,BlinkMacSystemFont,'Segoe UI',system-ui,sans-serif;
+    --radius:4px; --radius-lg:8px;
+  }
+  html,body{height:100%;margin:0;overflow:hidden;overscroll-behavior:none;
+    background:var(--bg);color:var(--ink);font-family:var(--sans);
+    -webkit-user-select:none;user-select:none;-webkit-tap-highlight-color:transparent;}
+  .app{position:fixed;inset:0;display:flex;flex-direction:column;
+    padding:env(safe-area-inset-top) 0 env(safe-area-inset-bottom);}
+  header{flex:0 0 auto;padding:14px 20px 6px;text-align:center;}
+  header h1{margin:0;font:600 17px var(--serif);color:var(--ink);letter-spacing:.02em;}
+  #teller{font:500 13px var(--sans);color:var(--ink-faint);margin-top:2px;}
+  #teller b{color:var(--ink-soft);} #teller .modus{color:var(--accent);font-weight:600;}
+  .stack{position:relative;flex:1 1 auto;margin:8px 16px;min-height:0;}
+  .kort{position:absolute;inset:0;display:flex;flex-direction:column;
+    background:var(--surface);border:1px solid var(--line);border-radius:22px;
+    box-shadow:0 10px 30px rgba(0,0,0,.10);padding:26px 24px;
+    transition:transform .28s cubic-bezier(.2,.7,.3,1),opacity .28s;will-change:transform;}
+  .kort .tema{font:600 12px var(--sans);letter-spacing:.14em;text-transform:uppercase;color:var(--accent-dark);}
+  .kort .kontekst{font:500 12px var(--sans);color:var(--ink-faint);margin-top:2px;}
+  .kort .sp{font:500 27px/1.28 var(--serif);color:var(--ink);margin:auto 0;}
+  .kort.taletype .sp{font-size:24px;}
+  .kort .hint{font:400 15px/1.45 var(--sans);color:var(--ink-soft);margin-top:14px;}
+  .kort .merke{position:absolute;top:26px;font:800 26px var(--sans);letter-spacing:.06em;
+    padding:6px 14px;border-radius:12px;border:3px solid;opacity:0;transform:rotate(-8deg);pointer-events:none;}
+  .merke.ja {left:24px;color:#3f7a34;border-color:#3f7a34;}
+  .merke.nei{right:24px;color:var(--accent-dark);border-color:var(--accent-dark);transform:rotate(8deg);}
+  .merke.opp{left:50%;top:auto;bottom:26px;transform:translateX(-50%);color:#b58a2f;border-color:#b58a2f;}
+  .taleflagg{display:inline-flex;align-items:center;gap:6px;margin-top:10px;
+    font:600 12px var(--sans);color:#b58a2f;letter-spacing:.06em;}
+  .knapper{flex:0 0 auto;display:flex;justify-content:center;align-items:center;gap:22px;padding:14px 0 20px;}
+  .kn{width:60px;height:60px;border-radius:50%;border:1px solid var(--line-strong);
+    background:var(--surface);display:grid;place-items:center;font-size:26px;cursor:pointer;
+    box-shadow:0 3px 10px rgba(0,0,0,.08);transition:transform .1s;color:var(--ink);}
+  .kn:active{transform:scale(.9);}
+  .kn.nei{color:var(--accent-dark);} .kn.ja{color:#3f7a34;} .kn.opp{color:#b58a2f;font-size:30px;}
+  .kn.stor{width:70px;height:70px;font-size:32px;}
+  .senere{position:absolute;top:14px;right:20px;font:500 13px var(--sans);color:var(--ink-faint);
+    background:none;border:none;cursor:pointer;}
+  .ark-bak{position:fixed;inset:0;background:rgba(20,16,12,.45);opacity:0;pointer-events:none;transition:opacity .22s;z-index:40;}
+  .ark-bak.vis{opacity:1;pointer-events:auto;}
+  .ark{position:fixed;left:0;right:0;bottom:0;z-index:41;background:var(--surface);
+    border-radius:22px 22px 0 0;padding:20px 20px calc(20px + env(safe-area-inset-bottom));
+    transform:translateY(100%);transition:transform .26s cubic-bezier(.2,.7,.3,1);
+    box-shadow:0 -8px 30px rgba(0,0,0,.18);max-height:82%;overflow:auto;}
+  .ark.vis{transform:none;}
+  .ark h2{margin:0 0 4px;font:600 18px var(--serif);color:var(--ink);}
+  .ark .spm{font:500 16px var(--sans);color:var(--ink-soft);margin:0 0 14px;}
+  textarea{width:100%;box-sizing:border-box;min-height:120px;font:400 17px var(--sans);
+    padding:12px 14px;border:1px solid var(--line-strong);border-radius:14px;background:var(--surface-2);color:var(--ink);resize:vertical;}
+  .mic{display:flex;align-items:center;gap:12px;margin:12px 0;}
+  .mic button{flex:0 0 auto;width:52px;height:52px;border-radius:50%;border:none;color:#fff;background:var(--accent-dark);font-size:22px;cursor:pointer;}
+  .mic button.opptak{background:#c0392b;animation:puls 1s infinite;}
+  @keyframes puls{50%{opacity:.55;}}
+  .mic small{color:var(--ink-faint);font:500 13px var(--sans);}
+  .arkknapper{display:flex;gap:10px;margin-top:16px;}
+  .arkknapper button{flex:1;padding:15px;border-radius:14px;border:1px solid var(--line-strong);font:600 16px var(--sans);cursor:pointer;background:var(--surface);color:var(--ink);}
+  .arkknapper .bja {background:#3f7a34;color:#fff;border-color:#3f7a34;}
+  .arkknapper .bnei{background:var(--accent-dark);color:#fff;border-color:var(--accent-dark);}
+  .arkknapper .bsend{background:var(--ink);color:var(--bg);border-color:var(--ink);}
+  #tom{position:absolute;inset:0;display:none;flex-direction:column;gap:10px;align-items:center;justify-content:center;text-align:center;color:var(--ink-soft);padding:30px;}
+  #tom.vis{display:flex;} #tom .stor{font-size:44px;}
+</style>
+</head>
+<body>
+<div class="app">
+  <header>
+    <h1>Spørsmålskort</h1>
+    <div id="teller">laster…</div>
+  </header>
+  <div class="stack" id="stack">
+    <div id="tom">
+      <div class="stor">✳︎</div>
+      <div id="tomTekst"><b>Ingen flere kort nå.</b></div>
+      <div style="font-size:14px;color:var(--ink-faint)">Generatoren lager nye ved neste kjøring.<br>Dra ned for å oppdatere.</div>
+    </div>
+  </div>
+  <div class="knapper">
+    <button class="kn nei" id="bNei" title="Nei">✗</button>
+    <button class="kn opp stor" id="bOpp" title="Detaljer / tale">↑</button>
+    <button class="kn ja" id="bJa" title="Ja">✓</button>
+  </div>
+</div>
+
+<div class="ark-bak" id="arkBak"></div>
+<div class="ark" id="ark">
+  <h2 id="arkTema">Utdyp</h2>
+  <p class="spm" id="arkSpm"></p>
+  <textarea id="arkTekst" placeholder="Skriv, eller trykk mikrofonen / bruk 🎤 på tastaturet…"></textarea>
+  <div class="mic">
+    <button id="micBtn" title="Tale til tekst">🎤</button>
+    <small id="micHint">Tale til tekst</small>
+  </div>
+  <div class="arkknapper" id="arkKnapper"></div>
+</div>
+
+<script>
+const KONFIG = window.KONFIG || {kortUrl:'', svarUrl:''};
+let MODE = 'sky';                 // 'lokal' (server på samme nett) | 'sky' (GitHub+AppsScript)
+let kø = [], aktivt = null, besvartØkt = 0;
+const stack = document.getElementById('stack');
+const tom = document.getElementById('tom');
+const teller = document.getElementById('teller');
+
+/* ---- lokal lagring for sky-modus (offline) ---- */
+const lager = {
+  besvarte(){ try{return new Set(JSON.parse(localStorage.kort_besvarte||'[]'))}catch(e){return new Set()} },
+  settBesvart(id){ const s=this.besvarte(); s.add(id); localStorage.kort_besvarte=JSON.stringify([...s]); },
+  utboks(){ try{return JSON.parse(localStorage.kort_utboks||'[]')}catch(e){return []} },
+  settUtboks(a){ localStorage.kort_utboks=JSON.stringify(a); },
+};
+
+/* ---- datakilde ---- */
+async function hentFlere(){
+  const finnes = new Set(kø.map(k=>k.id).concat(aktivt?[aktivt.id]:[]));
+  if(MODE==='lokal'){
+    try{
+      const d = await (await fetch('/kort/api/neste?n=15',{cache:'no-store'})).json();
+      for(const k of d.kort) if(!finnes.has(k.id)) kø.push(k);
+    }catch(e){}
+  }else{
+    try{
+      const alle = await (await fetch(KONFIG.kortUrl,{cache:'no-store'})).json();
+      const b = lager.besvarte();
+      for(const k of alle) if(!b.has(k.id) && !finnes.has(k.id)) kø.push(k);
+    }catch(e){}
+  }
+}
+function sendSvar(id, svar, svar_type){
+  besvartØkt++;
+  if(MODE==='lokal'){
+    fetch('/kort/api/svar',{method:'POST',headers:{'Content-Type':'application/json'},
+      body:JSON.stringify({id, svar, svar_type})}).catch(()=>{});
+  }else{
+    lager.settBesvart(id);
+    const boks = lager.utboks();
+    boks.push({id, svar, svar_type, besvart:new Date().toISOString()});
+    lager.settUtboks(boks);
+    flushUtboks();
+  }
+}
+let flusher=false;
+async function flushUtboks(){
+  if(MODE!=='sky' || flusher || !KONFIG.svarUrl) return;
+  flusher=true;
+  const igjen=[];
+  for(const sv of lager.utboks()){
+    try{ await fetch(KONFIG.svarUrl,{method:'POST',headers:{'Content-Type':'text/plain;charset=utf-8'},body:JSON.stringify(sv)}); }
+    catch(e){ igjen.push(sv); }
+  }
+  lager.settUtboks(igjen); flusher=false; oppdaterTeller();
+}
+window.addEventListener('online', flushUtboks);
+
+async function oppdaterTeller(){
+  if(MODE==='lokal'){
+    try{ const s=await (await fetch('/kort/api/status',{cache:'no-store'})).json();
+      teller.innerHTML = `<span class="modus">hjemme</span> · <b>${s['besvart']||0}</b> besvart · ${s['åpen']||0} igjen`;
+    }catch(e){ teller.textContent = `${besvartØkt} besvart denne økten`; }
+  }else{
+    const uklart = lager.utboks().length;
+    teller.innerHTML = `<span class="modus">sky</span> · <b>${lager.besvarte().size}</b> besvart · ${kø.length} i kø`
+      + (uklart?` · <span style="color:var(--accent)">${uklart} usendt</span>`:``);
+  }
+}
+
+/* ---- tegning ---- */
+function tegn(){
+  [...stack.querySelectorAll('.kort')].forEach(n=>n.remove());
+  if(!aktivt && kø.length) aktivt = kø.shift();
+  const vis = [];
+  if(aktivt) vis.push(aktivt);
+  vis.push(...kø.slice(0, 2));
+  tom.classList.toggle('vis', vis.length===0);
+  for(let i=vis.length-1;i>=0;i--){
+    const k = vis[i];
+    const el = document.createElement('div');
+    el.className = 'kort' + (k.type==='tale' ? ' taletype':'');
+    el.style.zIndex = 10 - i;
+    el.style.transform = i>0 ? `scale(${1-i*0.04}) translateY(${i*14}px)` : '';
+    el.style.opacity = i>1 ? 0 : 1;
+    el.innerHTML = `
+      <button class="senere" title="Senere">senere ⤵</button>
+      <div class="tema">${esc(k.tema||k.domene||'RIB')}</div>
+      <div class="kontekst">${esc(k.kontekst||'')}</div>
+      <div class="sp">${esc(k.sporsmal)}</div>
+      ${k.hint?`<div class="hint">${esc(k.hint)}</div>`:''}
+      ${k.type==='tale'?`<div class="taleflagg">🎤 Fortell — dra opp / trykk ↑</div>`:''}
+      <div class="merke ja">JA</div><div class="merke nei">NEI</div><div class="merke opp">UTDYP</div>`;
+    el.querySelector('.senere').onclick = (e)=>{ e.stopPropagation(); hopp(); };
+    stack.appendChild(el);
+    if(i===0) koble(el, k);
+  }
+  if(kø.length < 5) hentFlere().then(()=>{ if(!aktivt && kø.length) tegn(); });
+}
+function esc(s){ return (s||'').replace(/[&<>]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;'}[c])); }
+
+/* ---- gest ---- */
+function koble(el, k){
+  let x0=0,y0=0,dx=0,dy=0,drar=false;
+  const mja=el.querySelector('.merke.ja'), mnei=el.querySelector('.merke.nei'), mopp=el.querySelector('.merke.opp');
+  const ned = e=>{ drar=true; x0=e.clientX; y0=e.clientY; el.style.transition='none'; };
+  const beveg = e=>{
+    if(!drar) return;
+    dx=e.clientX-x0; dy=e.clientY-y0;
+    if(Math.abs(dx)>6||Math.abs(dy)>6) e.preventDefault();
+    el.style.transform = `translate(${dx}px,${dy}px) rotate(${dx*0.05}deg)`;
+    const opp = dy < -30 && Math.abs(dy) > Math.abs(dx);
+    mopp.style.opacity = opp ? Math.min(1,-dy/90):0;
+    mja.style.opacity  = (!opp && dx>0)?Math.min(1,dx/90):0;
+    mnei.style.opacity = (!opp && dx<0)?Math.min(1,-dx/90):0;
+  };
+  const opp_ = ()=>{
+    if(!drar) return; drar=false; el.style.transition='';
+    const gaOpp = dy < -90 && Math.abs(dy) > Math.abs(dx);
+    if(gaOpp){ tilbake(el); apneArk(k); }
+    else if(dx > 95){ k.type==='tale' ? (tilbake(el),apneArk(k)) : fly(el,'ja'); }
+    else if(dx < -95){ k.type==='tale' ? hopp() : fly(el,'nei'); }
+    else tilbake(el);
+    dx=dy=0;
+  };
+  el.addEventListener('pointerdown',ned);
+  el.addEventListener('pointermove',beveg);
+  el.addEventListener('pointerup',opp_);
+  el.addEventListener('pointercancel',opp_);
+}
+function tilbake(el){ el.style.transform=''; ['ja','nei','opp'].forEach(c=>{const m=el.querySelector('.merke.'+c); if(m)m.style.opacity=0;}); }
+function fly(el, valg){
+  const ut = valg==='ja' ? window.innerWidth : -window.innerWidth;
+  el.style.transform = `translate(${ut*1.3}px,40px) rotate(${valg==='ja'?22:-22}deg)`;
+  el.style.opacity = 0;
+  sendSvar(aktivt.id, valg, 'ja_nei');
+  neste();
+}
+
+const frontEl = ()=>stack.querySelector('.kort:last-child');
+document.getElementById('bJa').onclick  = ()=>{ if(!aktivt)return; if(aktivt.type==='tale')return apneArk(aktivt); fly(frontEl(),'ja'); };
+document.getElementById('bNei').onclick = ()=>{ if(!aktivt)return; if(aktivt.type==='tale')return hopp(); fly(frontEl(),'nei'); };
+document.getElementById('bOpp').onclick = ()=>{ if(aktivt) apneArk(aktivt); };
+
+function neste(){ aktivt=null; setTimeout(()=>{ if(kø.length) tegn(); else hentFlere().then(tegn); oppdaterTeller(); },120); }
+function hopp(){
+  if(!aktivt)return;
+  if(MODE==='lokal') fetch('/kort/api/hopp',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({id:aktivt.id})}).catch(()=>{});
+  const el=frontEl(); if(el){el.style.transition='';el.style.transform='translateY(120%)';el.style.opacity=0;} neste();
+}
+
+/* ---- detalj-ark + tale ---- */
+const ark=document.getElementById('ark'), arkBak=document.getElementById('arkBak');
+const arkTekst=document.getElementById('arkTekst'), arkKnapper=document.getElementById('arkKnapper');
+let arkKort=null;
+function apneArk(k){
+  arkKort = k;
+  document.getElementById('arkTema').textContent = (k.tema||k.domene||'RIB');
+  document.getElementById('arkSpm').textContent = k.sporsmal;
+  arkTekst.value='';
+  arkKnapper.innerHTML = k.type==='tale'
+    ? `<button class="bsend">Send svar</button>`
+    : `<button class="bnei">Nei</button><button class="bja">Ja</button>`;
+  if(k.type==='tale'){
+    arkKnapper.querySelector('.bsend').onclick=()=>{ const t=arkTekst.value.trim(); if(!t)return; sendSvar(k.id,t,'tale'); lukkArk(true); };
+  }else{
+    arkKnapper.querySelector('.bja').onclick =()=>ferdigJaNei('ja');
+    arkKnapper.querySelector('.bnei').onclick=()=>ferdigJaNei('nei');
+  }
+  arkBak.classList.add('vis'); ark.classList.add('vis');
+  setTimeout(()=>arkTekst.focus(),300);
+}
+function ferdigJaNei(valg){
+  const t=arkTekst.value.trim();
+  sendSvar(arkKort.id, t?`${valg} — ${t}`:valg, 'ja_nei');
+  lukkArk(true);
+}
+function lukkArk(besvart){
+  ark.classList.remove('vis'); arkBak.classList.remove('vis'); stoppTale();
+  if(besvart){ const el=frontEl(); if(el){el.style.transform=`translateY(-130%) rotate(-4deg)`;el.style.opacity=0;} neste(); }
+}
+arkBak.onclick=()=>lukkArk(false);
+
+const micBtn=document.getElementById('micBtn'), micHint=document.getElementById('micHint');
+const SR = window.SpeechRecognition || window.webkitSpeechRecognition;
+let rec=null, tarOpp=false, festet='';
+if(!SR){ micHint.textContent='Bruk 🎤 på iPhone-tastaturet'; }
+micBtn.onclick=()=>{ if(!SR){ arkTekst.focus(); return; } tarOpp ? stoppTale() : startTale(); };
+function startTale(){
+  rec=new SR(); rec.lang='nb-NO'; rec.continuous=true; rec.interimResults=true;
+  festet=arkTekst.value ? arkTekst.value.trim()+' ' : '';
+  rec.onresult=e=>{ let intr=''; for(let i=e.resultIndex;i<e.results.length;i++){ const r=e.results[i]; if(r.isFinal) festet+=r[0].transcript+' '; else intr+=r[0].transcript; } arkTekst.value=festet+intr; };
+  rec.onend=()=>{ if(tarOpp){ try{rec.start();}catch(e){} } };
+  rec.onerror=()=>stoppTale();
+  try{ rec.start(); tarOpp=true; micBtn.classList.add('opptak'); micHint.textContent='Lytter… trykk for å stoppe'; }
+  catch(e){ micHint.textContent='Fikk ikke tilgang til mikrofon'; }
+}
+function stoppTale(){ tarOpp=false; if(rec){ try{rec.stop();}catch(e){} } micBtn.classList.remove('opptak'); micHint.textContent = SR?'Tale til tekst':'Bruk 🎤 på tastaturet'; }
+
+/* dra ned når tomt = oppdater */
+let pull0=null;
+stack.addEventListener('pointerdown',e=>{ if(tom.classList.contains('vis')) pull0=e.clientY; });
+stack.addEventListener('pointerup',e=>{ if(pull0!=null && e.clientY-pull0>60){ hentFlere().then(tegn); } pull0=null; });
+
+/* ---- start ---- */
+async function init(){
+  try{ const r=await fetch('/kort/api/status',{cache:'no-store'}); if(r.ok) MODE='lokal'; }catch(e){}
+  if(MODE==='sky' && !KONFIG.kortUrl){
+    tom.classList.add('vis');
+    document.getElementById('tomTekst').innerHTML = '<b>Sky-modus ikke satt opp ennå.</b>';
+    tom.querySelector('div:last-child').innerHTML = 'Kjør <code>publiser.py</code> på Mac-en, eller åpne appen på hjemmenettet.<br>Se sky/OPPSETT.md.';
+    teller.textContent = '—';
+    return;
+  }
+  await hentFlere(); tegn(); oppdaterTeller();
+  if(MODE==='sky') flushUtboks();
+}
+init();
+setInterval(oppdaterTeller, 20000);
+if('serviceWorker' in navigator){ navigator.serviceWorker.register('sw.js').catch(()=>{}); }
+</script>
+</body>
+</html>
