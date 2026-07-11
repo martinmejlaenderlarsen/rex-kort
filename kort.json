@@ -1,41 +1,5 @@
 [
  {
-  "id": 14,
-  "domene": "rib",
-  "kontekst": "rib.tre",
-  "tema": "Tre — fallgruver",
-  "sporsmal": "Hva er de vanligste fallgruvene i trekonstruksjon du ser — forbindelser, fukt, svill, avstiving?",
-  "hint": "",
-  "type": "tale"
- },
- {
-  "id": 15,
-  "domene": "rib",
-  "kontekst": "rib.staal",
-  "tema": "Stål",
-  "sporsmal": "Spesifiserer du alltid både stålkvalitet OG utførelsesklasse (EXC) i RIB-leveransen?",
-  "hint": "NS-EN 1090.",
-  "type": "ja_nei"
- },
- {
-  "id": 16,
-  "domene": "rib",
-  "kontekst": "rib.mur",
-  "tema": "Murverk",
-  "sporsmal": "Bruker du fortsatt bærende murverk i nybygg, eller er det i praksis utfaset hos deg?",
-  "hint": "Ja = brukes fortsatt, Nei = utfaset.",
-  "type": "ja_nei"
- },
- {
-  "id": 17,
-  "domene": "rib",
-  "kontekst": "rib.grensesnitt.ark",
-  "tema": "Grensesnitt ARK",
-  "sporsmal": "Låser du bærelinjer/akser sammen med ARK før dimensjonering, så modellene ikke driver fra hverandre?",
-  "hint": "",
-  "type": "ja_nei"
- },
- {
   "id": 18,
   "domene": "rib",
   "kontekst": "rib.grensesnitt.ark",
