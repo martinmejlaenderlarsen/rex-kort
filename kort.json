@@ -1,23 +1,5 @@
 [
  {
-  "id": 18,
-  "domene": "rib",
-  "kontekst": "rib.grensesnitt.ark",
-  "tema": "RIB↔ARK",
-  "sporsmal": "Beskriv dragkampen RIB↔ARK i tidligfase. Hvor gir du deg, hvor står du på?",
-  "hint": "",
-  "type": "tale"
- },
- {
-  "id": 19,
-  "domene": "rib",
-  "kontekst": "rib.grensesnitt.tekniske",
-  "tema": "Utsparinger",
-  "sporsmal": "Krever du omforent utsparings-/føringsplan før du fryser dekker og bjelker?",
-  "hint": "Mot RIV/RIE.",
-  "type": "ja_nei"
- },
- {
   "id": 20,
   "domene": "rib",
   "kontekst": "rib.grensesnitt.tekniske",
@@ -25,15 +7,6 @@
   "sporsmal": "Hvordan koordinerer du utsparinger og føringsveier mot RIV/RIE så det ikke sager i bæringen?",
   "hint": "",
   "type": "tale"
- },
- {
-  "id": 21,
-  "domene": "rib",
-  "kontekst": "rib.dynamikk",
-  "tema": "Vibrasjon",
-  "sporsmal": "Sjekker du gulvvibrasjon/komfort for slanke dekker (kontor, gangbaner), ikke bare styrke og nedbøyning?",
-  "hint": "",
-  "type": "ja_nei"
  },
  {
   "id": 22,
