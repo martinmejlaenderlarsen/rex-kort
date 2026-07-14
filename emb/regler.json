@@ -1,0 +1,291 @@
+{
+  "kommentar": "Regel-kunnskapsgraf for RIB-domenet. Tekstene er KORTE SAMMENDRAG skrevet for gjenfinning – de er ikke autoritativ standardtekst. Slå alltid opp i gjeldende utgave av standarden/forskriften. Bytt ut/utvid nodene med virksomhetens egne regler.",
+  "noder": [
+    {
+      "id": "ns-en-1990",
+      "type": "standard",
+      "tittel": "NS-EN 1990 (Eurokode 0) – Grunnlag for prosjektering",
+      "kontekst": ["rib.lastkombinasjoner", "rib.grensetilstander", "rib.dimklasse.cc"],
+      "tekst": "Grunnlaget for all konstruksjonsprosjektering: pålitelighetsklasser (CC/RC), dimensjonerende situasjoner, grensetilstander (brudd/bruks), lastkombinasjoner med partialfaktorer og psi-faktorer. Nasjonalt tillegg (NA) angir norske verdier."
+    },
+    {
+      "id": "ns-en-1991-1-1",
+      "type": "standard",
+      "tittel": "NS-EN 1991-1-1 – Egenlaster og nyttelaster",
+      "kontekst": ["rib.laster", "rib.laster.nytte-kategori", "rib.laster.folkemengde"],
+      "tekst": "Tetthet, egenvekt og nyttelaster i bygninger. Nyttelast settes etter brukskategori (A bolig, B kontor, C forsamling, D butikk, E lager osv.), med tilhørende punktlaster og reduksjonsfaktorer for areal og etasjer."
+    },
+    {
+      "id": "ns-en-1991-1-3",
+      "type": "standard",
+      "tittel": "NS-EN 1991-1-3 – Snølaster",
+      "kontekst": ["rib.snolast", "rib.tak.flatt", "rib.laster.snorydding"],
+      "tekst": "Snølast på tak fra karakteristisk snølast på mark (kommuneverdier i NA), formfaktorer for takform, og snødrift ved nivåsprang, parapeter og lokale oppbygg. Eksponerings- og termisk koeffisient inngår."
+    },
+    {
+      "id": "ns-en-1991-1-4",
+      "type": "standard",
+      "tittel": "NS-EN 1991-1-4 – Vindlaster",
+      "kontekst": ["rib.vindlast", "rib.vind.dynamisk", "rib.detaljer.forankring-vind"],
+      "tekst": "Vindlast fra referansevindhastighet (kommuneverdier i NA), terrengruhet, formfaktorer for utvendig og innvendig trykk, og dynamiske virkninger for slanke/høye konstruksjoner. Lokale sug ved hjørner, rand og parapet."
+    },
+    {
+      "id": "ns-en-1991-1-5",
+      "type": "standard",
+      "tittel": "NS-EN 1991-1-5 – Termiske påvirkninger",
+      "kontekst": ["rib.temperaturlast", "rib.detaljer.dilatasjon"],
+      "tekst": "Temperaturlaster på konstruksjoner: jevn temperaturendring og gradient. Styrer behov for dilatasjonsfuger og tvangskrefter i lange/fastholdte konstruksjoner."
+    },
+    {
+      "id": "ns-en-1991-1-6",
+      "type": "standard",
+      "tittel": "NS-EN 1991-1-6 – Laster ved utførelse",
+      "kontekst": ["rib.byggefase", "rib.midlertidige", "rib.kran", "rib.prefab.montasje"],
+      "tekst": "Laster i byggefasen: montasjelaster, lagring av materialer på dekker, forskaling og støttekonstruksjoner, kranlaster og midlertidige tilstander der ferdig stabiliseringssystem ikke er virksomt."
+    },
+    {
+      "id": "ns-en-1991-1-7",
+      "type": "standard",
+      "tittel": "NS-EN 1991-1-7 – Ulykkeslaster",
+      "kontekst": ["rib.ulykkeslast", "rib.progressivt", "rib.robusthet.strekkbaand"],
+      "tekst": "Ulykkeslaster og robusthet: påkjørsel, eksplosjon, og strategier mot progressiv kollaps etter konsekvensklasse – horisontale og vertikale strekkbånd, nøkkelelementer og alternative lastveier."
+    },
+    {
+      "id": "ns-en-1992-1-1",
+      "type": "standard",
+      "tittel": "NS-EN 1992-1-1 (Eurokode 2) – Betongkonstruksjoner",
+      "kontekst": ["rib.betong", "rib.riss", "rib.overdekning", "rib.krympkryp", "rib.armering.forankring", "rib.armering.detaljering", "rib.skjaerkraft", "rib.nedboyning", "rib.spennbetong"],
+      "tekst": "Prosjektering av betong: eksponeringsklasser og overdekning, rissviddekontroll, forankring og skjøting av armering, skjærkapasitet, gjennomlokking, nedbøyning, kryp og svinn, spennarmering og minimumsarmering."
+    },
+    {
+      "id": "ns-en-1993-1-1",
+      "type": "standard",
+      "tittel": "NS-EN 1993-1-1 (Eurokode 3) – Stålkonstruksjoner",
+      "kontekst": ["rib.knekking", "rib.stal.instabilitet", "rib.stal.hulprofil", "rib.forbindelser", "rib.utmatting", "rib.stal.sprobrudd"],
+      "tekst": "Prosjektering av stål: tverrsnittsklasser, knekking og vipping, stabilitet av rammer, forbindelser (del 1-8), utmatting (del 1-9), materialseighet og sprøbrudd (del 1-10)."
+    },
+    {
+      "id": "ns-en-1995-1-1",
+      "type": "standard",
+      "tittel": "NS-EN 1995-1-1 (Eurokode 5) – Trekonstruksjoner",
+      "kontekst": ["rib.limtre", "rib.massivtre", "rib.tre.langtid", "rib.tre.lvl", "rib.tre.hybrid", "rib.tre.lydgulv"],
+      "tekst": "Prosjektering av tre: fasthetsklasser, fuktklasser og kmod/kdef for langtidseffekter, forbindelser med mekaniske forbindere, limtre og massivtre (CLT), vibrasjoner i tredekker og brannregler i del 1-2."
+    },
+    {
+      "id": "ns-en-1997-1",
+      "type": "standard",
+      "tittel": "NS-EN 1997-1 (Eurokode 7) – Geoteknisk prosjektering",
+      "kontekst": ["rib.geoteknikk.paaledning", "rib.peler", "rib.setninger", "rib.fundament.eksentrisk", "rib.fundament.plate-paa-mark", "rib.jordtrykk", "rib.spunt", "rib.grunnvann", "rib.oppdrift", "rib.grensesnitt.geo"],
+      "tekst": "Geoteknikk: grunnundersøkelser, bæreevne og setninger for fundamenter, peler, støttekonstruksjoner og jordtrykk, grunnvann og oppdrift. Geoteknisk kategori styrer omfang av undersøkelser og kontroll."
+    },
+    {
+      "id": "ns-en-1998-1",
+      "type": "standard",
+      "tittel": "NS-EN 1998-1 (Eurokode 8) – Seismisk prosjektering",
+      "kontekst": ["rib.seismikk.ikkebaerende", "rib.stabilisering"],
+      "tekst": "Jordskjelvdimensjonering: seismisk sone og grunntype, utelatelseskriterier for lav seismisitet, regularitet i plan og oppriss, og krav til forankring av ikke-bærende komponenter."
+    },
+    {
+      "id": "ns-en-13670",
+      "type": "standard",
+      "tittel": "NS-EN 13670 – Utførelse av betongkonstruksjoner",
+      "kontekst": ["rib.toleranser", "rib.utforelse.betong", "rib.betong.stopeteknikk"],
+      "tekst": "Utførelseskrav for betong: utførelsesklasser, geometriske toleranser (toleranseklasse 1 og 2), forskaling, armeringsarbeid, støping og herdetiltak. Grunnlag for toleransekjeder mot prefab."
+    },
+    {
+      "id": "ns-en-1090-2",
+      "type": "standard",
+      "tittel": "NS-EN 1090-2 – Utførelse av stålkonstruksjoner",
+      "kontekst": ["rib.utforelse.exc", "rib.stal.korrosjon", "rib.forbindelser"],
+      "tekst": "Utførelseskrav for stål: utførelsesklasser EXC1–EXC4 valgt ut fra konsekvensklasse og bruk, krav til sveising, boltforbindelser, overflatebehandling/korrosjonsbeskyttelse og geometriske toleranser."
+    },
+    {
+      "id": "ns-3720",
+      "type": "standard",
+      "tittel": "NS 3720 – Klimagassberegninger for bygninger",
+      "kontekst": ["rib.klimagass", "rib.miljo", "rib.lcc"],
+      "tekst": "Metode for klimagassberegning over livsløpet: modulene A–D, systemgrenser og referanseenheter. Brukes til å dokumentere utslippskutt fra lavkarbonbetong, ombruk og materialoptimalisering."
+    },
+    {
+      "id": "tek17-kap10",
+      "type": "forskrift",
+      "tittel": "TEK17 kapittel 10 – Konstruksjonssikkerhet",
+      "kontekst": ["rib.laster", "rib.ansvar", "rib.grensetilstander"],
+      "tekst": "Forskriftskravet bak alt: byggverk skal ha tilfredsstillende sikkerhet mot brudd og deformasjoner (§10-5, §10-6). Preakseptert ytelse er prosjektering etter Eurokodene med norske nasjonale tillegg."
+    },
+    {
+      "id": "sak10-kap14",
+      "type": "forskrift",
+      "tittel": "SAK10 kapittel 14 – Uavhengig kontroll",
+      "kontekst": ["rib.kontroll.uavhengig", "rib.kvalitetssikring", "rib.ansvar"],
+      "tekst": "Obligatorisk uavhengig kontroll av prosjektering og utførelse av bærende konstruksjoner i tiltaksklasse 2 og 3 (og geoteknikk). Kontrollen skal planlegges fra prosjektstart, ikke bestilles på slutten."
+    },
+    {
+      "id": "regel-lastkombinasjoner",
+      "type": "praksisregel",
+      "tittel": "Bruk riktige lastkombinasjoner og psi-faktorer",
+      "kontekst": ["rib.lastkombinasjoner", "rib.grensetilstander"],
+      "tekst": "Kombiner laster etter ligning 6.10a/6.10b med korrekt dominerende variabel last og psi-faktorer fra NS-EN 1990 NA. Sjekk både bruddgrense (STR/GEO/EQU) og bruksgrense (karakteristisk, ofte forekommende, tilnærmet permanent)."
+    },
+    {
+      "id": "regel-nyttelast-kategori",
+      "type": "praksisregel",
+      "tittel": "Sett nyttelast etter faktisk brukskategori",
+      "kontekst": ["rib.laster.nytte-kategori", "rib.laster", "rib.laster.ombygging"],
+      "tekst": "Ikke bruk én rund 'trygg' nyttelast overalt. Velg kategori etter faktisk bruk (NS-EN 1991-1-1), dokumenter valget, og utnytt reduksjonsfaktorer der det er riktig. Overdimensjonering koster både penger og klimagass; feil kategori ved bruksendring er en klassisk feilkilde."
+    },
+    {
+      "id": "regel-snodrift",
+      "type": "praksisregel",
+      "tittel": "Kontroller snødrift ved nivåsprang og takoppbygg",
+      "kontekst": ["rib.snolast", "rib.tak.solcelle", "rib.tak.gronn", "rib.laster.snorydding"],
+      "tekst": "Snødrift undervurderes ofte: sjekk nivåsprang mot nabobygg, parapeter, sjakter og solcellerekker som gir lokale fonner etter NS-EN 1991-1-3. Avklar driftsforutsetninger om snørydding skriftlig hvis de utnyttes i beregningen."
+    },
+    {
+      "id": "regel-toleransekjeder",
+      "type": "praksisregel",
+      "tittel": "Regn toleransekjeder i grensesnittet prefab/plasstøpt",
+      "kontekst": ["rib.toleranser", "rib.grensesnitt.prefab", "rib.detaljer.opplegg"],
+      "tekst": "Summer tillatte avvik (fundament, vegg, element, opplegg) og kontroller at oppleggslengder og fuger tåler summen. Toleranseklasser fra NS-EN 13670 for plasstøpt og produktstandardene for prefab må sees i sammenheng – kjeden er ofte lengre enn man tror."
+    },
+    {
+      "id": "regel-uavhengig-kontroll",
+      "type": "praksisregel",
+      "tittel": "Planlegg uavhengig kontroll fra prosjektstart",
+      "kontekst": ["rib.kontroll.uavhengig", "rib.kontroll", "rib.kvalitetssikring", "rib.dokumentasjon"],
+      "tekst": "I tiltaksklasse 2/3 skal bærende konstruksjoner ha uavhengig kontroll etter SAK10 kap. 14. Avtal kontrollpunkter, leveranser og tidspunkter tidlig, og sørg for at beregningsrapport og forutsetningsnotat er kontrollerbare dokumenter."
+    },
+    {
+      "id": "regel-lavkarbon",
+      "type": "praksisregel",
+      "tittel": "Vurder lavkarbon og ombruk i hvert bæresystem",
+      "kontekst": ["rib.klimagass", "rib.miljo.armeringsmengde", "rib.ombruk", "rib.miljo.trekonstruksjon", "rib.demonterbarhet"],
+      "tekst": "De største kuttene ligger i å redusere mengder (spennvidder, optimaliserte tverrsnitt, armeringsmengde), velge lavkarbonklasse betong, vurdere tre/hybrid og ombruk. Dokumenter effekten med klimagassregnskap etter NS 3720."
+    },
+    {
+      "id": "regel-robusthet",
+      "type": "praksisregel",
+      "tittel": "Sikre robusthet mot progressiv kollaps",
+      "kontekst": ["rib.progressivt", "rib.robusthet.strekkbaand", "rib.ulykkeslast", "rib.dimklasse.cc"],
+      "tekst": "Klassifiser bygget i konsekvensklasse (NS-EN 1990/1991-1-7) og velg strategi: strekkbånd horisontalt/vertikalt, alternative lastveier eller dimensjonering av nøkkelelementer. Spesielt viktig i prefab-bygg der skjøtene er robusthetens svake punkt."
+    },
+    {
+      "id": "regel-eksisterende",
+      "type": "praksisregel",
+      "tittel": "Kartlegg eksisterende bæring før nye laster",
+      "kontekst": ["rib.eksisterende", "rib.eksisterende.dokumentasjon", "rib.eksisterende.pabygg", "rib.tilstandsvurdering", "rib.forsterkning"],
+      "tekst": "Ved ombygging/påbygg: krev oppmåling, tilstandsvurdering og kapasitetskontroll av eksisterende bæring før nye laster legges på. Mangler original dokumentasjon, bruk materialprøving og konservative antakelser – og dokumenter dem som forutsetninger."
+    },
+    {
+      "id": "regel-nedboyning-komfort",
+      "type": "praksisregel",
+      "tittel": "Avklar krav til nedbøyning og svingninger tidlig",
+      "kontekst": ["rib.nedboyning", "rib.dynamikk", "rib.komfort.hoyhus", "rib.dynamikk.maskin", "rib.grensetilstander"],
+      "tekst": "Bruksgrensekrav (nedbøyning, rissvidde, akselerasjon/komfort) er delvis avtalesak: forankre dem skriftlig med byggherre og ARK. For lette dekker (tre, kompositt), gangbroer og maskinfundamenter må egenfrekvens og demping kontrolleres, ikke bare statisk nedbøyning."
+    },
+    {
+      "id": "regel-byggefase",
+      "type": "praksisregel",
+      "tittel": "Dimensjoner for byggefasen, ikke bare ferdigtilstand",
+      "kontekst": ["rib.byggefase", "rib.midlertidige", "rib.kran", "rib.prefab.montasje", "rib.stabilisering", "rib.hms"],
+      "tekst": "Montasjelaster, kranoppstilling, lagring på dekker og midlertidig avstiving styres av NS-EN 1991-1-6. Avklar hvem som prosjekterer midlertidige tilstander (RIB eller entreprenør) og når stabiliseringssystemet er virksomt – dette overses oftest."
+    },
+    {
+      "id": "regel-overdekning-riss",
+      "type": "praksisregel",
+      "tittel": "Velg eksponeringsklasse, overdekning og rissviddekrav samlet",
+      "kontekst": ["rib.overdekning", "rib.riss", "rib.fukt", "rib.frost", "rib.betong"],
+      "tekst": "Eksponeringsklasse (miljø) bestemmer betongkvalitet, minste overdekning og rissviddekrav etter NS-EN 1992-1-1. Husk tillegg for avvik (toleranse) i nominell overdekning, og strengere krav mot kloridmiljø og frost."
+    },
+    {
+      "id": "regel-utsparinger",
+      "type": "praksisregel",
+      "tittel": "Koordiner utsparinger og føringsveier mot RIV/RIE",
+      "kontekst": ["rib.utsparinger", "rib.grensesnitt.tekniske", "rib.grensesnitt.riv", "rib.grensesnitt.rie", "rib.dekker", "rib.bjelker"],
+      "tekst": "Etabler utsparingsprosess med frister og modellbasert kollisjonskontroll. Hull i bæring skal godkjennes av RIB: sjekk skjærsoner ved opplegg, gjennomlokking rundt søyler og minimumsavstander. Sene hull i spennbetong er spesielt kritisk."
+    },
+    {
+      "id": "regel-mmi-faser",
+      "type": "praksisregel",
+      "tittel": "Styr modellmodenhet (MMI) og lås per fase",
+      "kontekst": ["rib.dokumentasjon", "rib.faser", "rib.modellering", "rib.produksjonsunderlag", "rib.endringer"],
+      "tekst": "Bruk MMI (modenhetsindeks, bransjenorm) til å kommunisere hva som er låst i modellen per fase, og hva som fortsatt kan endres. Endringer etter låsing skal gjennom endringsstyring med konsekvensvurdering for bæring, fremdrift og kost."
+    },
+    {
+      "id": "regel-kvikkleire",
+      "type": "praksisregel",
+      "tittel": "Avklar områdestabilitet og kvikkleire før prosjektering",
+      "kontekst": ["rib.geoteknikk.kvikkleire", "rib.grensesnitt.geo", "rib.ras"],
+      "tekst": "I områder med mulig kvikkleire skal områdestabilitet dokumenteres etter NVEs veileder (1/2019) før detaljprosjektering. RIB må avklare grensesnittet mot geotekniker: hvem dokumenterer lokalstabilitet, fundamentering og anleggsfasens påvirkning."
+    },
+    {
+      "id": "regel-stabilisering",
+      "type": "praksisregel",
+      "tittel": "Definer et entydig stabiliseringssystem",
+      "kontekst": ["rib.stabilisering", "rib.stabilitet.vindkryss", "rib.stabilitet.momentramme", "rib.stabilitet.torsjon", "rib.stabilitet.myktplan", "rib.heissjakt"],
+      "tekst": "Velg og dokumenter hvordan horisontallaster føres til grunnen: skiver, sjakter, vindkryss eller rammer. Kontroller torsjon ved usymmetrisk stivhet, overføring gjennom dekkeskiver, og at systemet også virker i alle byggefaser."
+    },
+    {
+      "id": "regel-brann-baering",
+      "type": "praksisregel",
+      "tittel": "Samordne brannkrav til bæresystemet med RIBr",
+      "kontekst": ["rib.grensesnitt.brannradgiver", "rib.stal.brannmaling", "rib.tre.brann", "rib.brann.avskalling"],
+      "tekst": "Brannmotstand (R-krav) kommer fra brannkonseptet: avklar brannklasse og bæresystemets R-krav med brannrådgiver tidlig. Velg strategi per materiale – innbrenning for tre, brannmaling/isolering for stål, overdekning og avskallingsrisiko for betong."
+    },
+    {
+      "id": "regel-forutsetningsnotat",
+      "type": "praksisregel",
+      "tittel": "Dokumenter forutsetninger og beregningsgrunnlag",
+      "kontekst": ["rib.dokumentasjon.forutsetninger", "rib.dokumentasjon.beregningsrapport", "rib.analysemodell", "rib.beregningsverktoy", "rib.kvalitetssikring"],
+      "tekst": "Hold et levende forutsetningsnotat: laster, grunnforhold, materialkvaliteter, toleranser, avtalte bruksgrensekrav og programvareversjoner. Beregningsrapporten skal kunne kontrolleres av tredjepart uten tilgang til modellen."
+    }
+  ],
+  "kanter": [
+    { "fra": "tek17-kap10", "til": "ns-en-1990", "relasjon": "oppfylles_av", "beskrivelse": "Preakseptert ytelse: prosjektering etter Eurokodene" },
+    { "fra": "ns-en-1990", "til": "ns-en-1991-1-1", "relasjon": "grunnlag_for" },
+    { "fra": "ns-en-1990", "til": "ns-en-1991-1-3", "relasjon": "grunnlag_for" },
+    { "fra": "ns-en-1990", "til": "ns-en-1991-1-4", "relasjon": "grunnlag_for" },
+    { "fra": "ns-en-1990", "til": "ns-en-1991-1-5", "relasjon": "grunnlag_for" },
+    { "fra": "ns-en-1990", "til": "ns-en-1991-1-6", "relasjon": "grunnlag_for" },
+    { "fra": "ns-en-1990", "til": "ns-en-1991-1-7", "relasjon": "grunnlag_for" },
+    { "fra": "ns-en-1990", "til": "ns-en-1992-1-1", "relasjon": "grunnlag_for" },
+    { "fra": "ns-en-1990", "til": "ns-en-1993-1-1", "relasjon": "grunnlag_for" },
+    { "fra": "ns-en-1990", "til": "ns-en-1995-1-1", "relasjon": "grunnlag_for" },
+    { "fra": "ns-en-1990", "til": "ns-en-1997-1", "relasjon": "grunnlag_for" },
+    { "fra": "ns-en-1990", "til": "ns-en-1998-1", "relasjon": "grunnlag_for" },
+    { "fra": "ns-en-1992-1-1", "til": "ns-en-13670", "relasjon": "utfores_etter" },
+    { "fra": "ns-en-1993-1-1", "til": "ns-en-1090-2", "relasjon": "utfores_etter" },
+
+    { "fra": "regel-lastkombinasjoner", "til": "ns-en-1990", "relasjon": "hjemlet_i" },
+    { "fra": "regel-nyttelast-kategori", "til": "ns-en-1991-1-1", "relasjon": "hjemlet_i" },
+    { "fra": "regel-nyttelast-kategori", "til": "regel-lastkombinasjoner", "relasjon": "relatert_til" },
+    { "fra": "regel-snodrift", "til": "ns-en-1991-1-3", "relasjon": "hjemlet_i" },
+    { "fra": "regel-toleransekjeder", "til": "ns-en-13670", "relasjon": "hjemlet_i" },
+    { "fra": "regel-toleransekjeder", "til": "regel-utsparinger", "relasjon": "relatert_til", "beskrivelse": "Begge er grensesnittsregler mot utførelse" },
+    { "fra": "regel-uavhengig-kontroll", "til": "sak10-kap14", "relasjon": "hjemlet_i" },
+    { "fra": "regel-uavhengig-kontroll", "til": "regel-forutsetningsnotat", "relasjon": "forutsetter", "beskrivelse": "Kontrollerbar dokumentasjon er en forutsetning for kontroll" },
+    { "fra": "regel-lavkarbon", "til": "ns-3720", "relasjon": "hjemlet_i" },
+    { "fra": "regel-lavkarbon", "til": "regel-nyttelast-kategori", "relasjon": "relatert_til", "beskrivelse": "Riktig last gir mindre mengder og lavere utslipp" },
+    { "fra": "regel-robusthet", "til": "ns-en-1991-1-7", "relasjon": "hjemlet_i" },
+    { "fra": "regel-robusthet", "til": "ns-en-1990", "relasjon": "henviser_til", "beskrivelse": "Konsekvensklasser" },
+    { "fra": "regel-eksisterende", "til": "ns-en-1990", "relasjon": "henviser_til", "beskrivelse": "Pålitelighetsvurdering av eksisterende konstruksjoner" },
+    { "fra": "regel-eksisterende", "til": "regel-forutsetningsnotat", "relasjon": "forutsetter" },
+    { "fra": "regel-nedboyning-komfort", "til": "ns-en-1990", "relasjon": "hjemlet_i", "beskrivelse": "Bruksgrensetilstander, kombinasjoner" },
+    { "fra": "regel-nedboyning-komfort", "til": "ns-en-1995-1-1", "relasjon": "henviser_til", "beskrivelse": "Vibrasjoner i tredekker" },
+    { "fra": "regel-byggefase", "til": "ns-en-1991-1-6", "relasjon": "hjemlet_i" },
+    { "fra": "regel-byggefase", "til": "regel-stabilisering", "relasjon": "relatert_til", "beskrivelse": "Stabilitet i midlertidige tilstander" },
+    { "fra": "regel-byggefase", "til": "regel-toleransekjeder", "relasjon": "relatert_til", "beskrivelse": "Montasje avhenger av toleranser" },
+    { "fra": "regel-overdekning-riss", "til": "ns-en-1992-1-1", "relasjon": "hjemlet_i" },
+    { "fra": "regel-overdekning-riss", "til": "ns-en-13670", "relasjon": "henviser_til", "beskrivelse": "Toleransetillegg på overdekning" },
+    { "fra": "regel-utsparinger", "til": "ns-en-1992-1-1", "relasjon": "henviser_til", "beskrivelse": "Skjær og gjennomlokking rundt hull" },
+    { "fra": "regel-mmi-faser", "til": "regel-forutsetningsnotat", "relasjon": "relatert_til" },
+    { "fra": "regel-kvikkleire", "til": "ns-en-1997-1", "relasjon": "hjemlet_i" },
+    { "fra": "regel-stabilisering", "til": "ns-en-1993-1-1", "relasjon": "henviser_til", "beskrivelse": "Rammestabilitet, imperfeksjoner" },
+    { "fra": "regel-stabilisering", "til": "ns-en-1998-1", "relasjon": "henviser_til", "beskrivelse": "Regularitet og seismisk stabilitet" },
+    { "fra": "regel-stabilisering", "til": "ns-en-1991-1-4", "relasjon": "henviser_til", "beskrivelse": "Horisontallast fra vind" },
+    { "fra": "regel-brann-baering", "til": "ns-en-1992-1-1", "relasjon": "henviser_til", "beskrivelse": "Del 1-2 brann betong" },
+    { "fra": "regel-brann-baering", "til": "ns-en-1993-1-1", "relasjon": "henviser_til", "beskrivelse": "Del 1-2 brann stål" },
+    { "fra": "regel-brann-baering", "til": "ns-en-1995-1-1", "relasjon": "henviser_til", "beskrivelse": "Del 1-2 brann tre" },
+    { "fra": "regel-forutsetningsnotat", "til": "sak10-kap14", "relasjon": "henviser_til", "beskrivelse": "Kontrollerbarhet" }
+  ]
+}
