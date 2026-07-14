@@ -18,15 +18,6 @@
   "type": "tale"
  },
  {
-  "id": 23,
-  "domene": "rib",
-  "kontekst": "rib.byggefase",
-  "tema": "Byggefase",
-  "sporsmal": "Prosjekterer du avstiving og stabilitet i byggefasen (montasje), ikke bare ferdig tilstand?",
-  "hint": "",
-  "type": "ja_nei"
- },
- {
   "id": 24,
   "domene": "rib",
   "kontekst": "rib.byggefase",
@@ -133,5 +124,1679 @@
   "sporsmal": "Hvilke ikke-statiske hensyn (logistikk, LCC, demonterbarhet, ombruk) former bæresystemvalget ditt?",
   "hint": "",
   "type": "tale"
+ },
+ {
+  "id": 211,
+  "domene": "rib",
+  "kontekst": "rib.betong",
+  "tema": "Fasthetsklasse",
+  "sporsmal": "Velger du betongfasthetsklasse etter både eksponering OG kapasitetsbehov, ikke bare standard B35?",
+  "hint": "",
+  "type": "ja_nei"
+ },
+ {
+  "id": 212,
+  "domene": "rib",
+  "kontekst": "rib.betong",
+  "tema": "Minimumsarmering",
+  "sporsmal": "Legger du alltid inn minimumsarmering mot svinn/temperatur i store betongflater?",
+  "hint": "",
+  "type": "ja_nei"
+ },
+ {
+  "id": 213,
+  "domene": "rib",
+  "kontekst": "rib.betong",
+  "tema": "Betong",
+  "sporsmal": "Fortell hvordan du velger fasthetsklasse, armeringsmengde og overdekning for et typisk plasstøpt dekke.",
+  "hint": "",
+  "type": "tale"
+ },
+ {
+  "id": 214,
+  "domene": "rib",
+  "kontekst": "rib.spennbetong",
+  "tema": "Etteroppspenning",
+  "sporsmal": "Bruker du spennarmering (etteroppspenning) på store spenn, eller holder du deg til slakkarmert?",
+  "hint": "",
+  "type": "ja_nei"
+ },
+ {
+  "id": 215,
+  "domene": "rib",
+  "kontekst": "rib.spennbetong",
+  "tema": "Spennbetong",
+  "sporsmal": "Når lønner spennbetong seg framfor slakkarmert betong, og hvilke fallgruver har oppspenning?",
+  "hint": "",
+  "type": "tale"
+ },
+ {
+  "id": 216,
+  "domene": "rib",
+  "kontekst": "rib.limtre",
+  "tema": "Limtre",
+  "sporsmal": "Dimensjonerer du limtrebjelker for nedbøyning før kapasitet på store spenn?",
+  "hint": "",
+  "type": "ja_nei"
+ },
+ {
+  "id": 217,
+  "domene": "rib",
+  "kontekst": "rib.limtre",
+  "tema": "Limtre",
+  "sporsmal": "Fortell om når du velger limtre framfor stål på et haldekke — spenn, brann, kostnad, estetikk.",
+  "hint": "",
+  "type": "tale"
+ },
+ {
+  "id": 218,
+  "domene": "rib",
+  "kontekst": "rib.massivtre",
+  "tema": "CLT",
+  "sporsmal": "Regner du massivtre (CLT) som skive for horisontalstabilitet i trebygg?",
+  "hint": "",
+  "type": "ja_nei"
+ },
+ {
+  "id": 219,
+  "domene": "rib",
+  "kontekst": "rib.massivtre",
+  "tema": "Massivtre",
+  "sporsmal": "Hva er de kritiske detaljene i et massivtrebygg — samvirke, lyd, brann, trykk vinkelrett fiber?",
+  "hint": "",
+  "type": "tale"
+ },
+ {
+  "id": 220,
+  "domene": "rib",
+  "kontekst": "rib.forbindelser",
+  "tema": "Stålforbindelser",
+  "sporsmal": "Spesifiserer du forbindelsestype (bolt/sveis) og forspenningsklasse eksplisitt i knutepunkter?",
+  "hint": "",
+  "type": "ja_nei"
+ },
+ {
+  "id": 221,
+  "domene": "rib",
+  "kontekst": "rib.forbindelser",
+  "tema": "Treforbindelser",
+  "sporsmal": "Er forbindelsen som regel den dimensjonerende i trekonstruksjoner hos deg?",
+  "hint": "",
+  "type": "ja_nei"
+ },
+ {
+  "id": 222,
+  "domene": "rib",
+  "kontekst": "rib.forbindelser",
+  "tema": "Forbindelser",
+  "sporsmal": "Fortell hvordan du tenker rundt knutepunkter — hva bestemmer om du velger leddet eller innspent?",
+  "hint": "",
+  "type": "tale"
+ },
+ {
+  "id": 223,
+  "domene": "rib",
+  "kontekst": "rib.soyler",
+  "tema": "Søyler",
+  "sporsmal": "Kontrollerer du alltid knekking (2. ordens) for slanke søyler, ikke bare ren trykkapasitet?",
+  "hint": "",
+  "type": "ja_nei"
+ },
+ {
+  "id": 224,
+  "domene": "rib",
+  "kontekst": "rib.soyler",
+  "tema": "Søyler",
+  "sporsmal": "Hvordan bestemmer du søyledimensjon og -avstand i tidligfase for et kontorbygg?",
+  "hint": "",
+  "type": "tale"
+ },
+ {
+  "id": 225,
+  "domene": "rib",
+  "kontekst": "rib.bjelker",
+  "tema": "Bjelker",
+  "sporsmal": "Sjekker du vipping (lateral torsional buckling) for stålbjelker uten kontinuerlig sideveis støtte?",
+  "hint": "",
+  "type": "ja_nei"
+ },
+ {
+  "id": 226,
+  "domene": "rib",
+  "kontekst": "rib.bjelker",
+  "tema": "Bjelker",
+  "sporsmal": "Fortell om valget mellom valset profil, sveist I-profil og fagverk for et langt spenn.",
+  "hint": "",
+  "type": "tale"
+ },
+ {
+  "id": 227,
+  "domene": "rib",
+  "kontekst": "rib.dekker",
+  "tema": "Hulldekke",
+  "sporsmal": "Er prefab hulldekke førstevalget ditt for etasjeskiller i næringsbygg?",
+  "hint": "",
+  "type": "ja_nei"
+ },
+ {
+  "id": 228,
+  "domene": "rib",
+  "kontekst": "rib.dekker",
+  "tema": "Dekketype",
+  "sporsmal": "Hvordan velger du dekketype — plasstøpt, hulldekke, kompositt — for et gitt spenn og bruk?",
+  "hint": "",
+  "type": "tale"
+ },
+ {
+  "id": 229,
+  "domene": "rib",
+  "kontekst": "rib.kompositt",
+  "tema": "Samvirke",
+  "sporsmal": "Bruker du samvirke stål-betong (kompositt) for å redusere byggehøyde på lange spenn?",
+  "hint": "",
+  "type": "ja_nei"
+ },
+ {
+  "id": 230,
+  "domene": "rib",
+  "kontekst": "rib.kompositt",
+  "tema": "Kompositt",
+  "sporsmal": "Når er kompositt-dekke verdt merarbeidet med skjærbolter og oppbygning?",
+  "hint": "",
+  "type": "tale"
+ },
+ {
+  "id": 231,
+  "domene": "rib",
+  "kontekst": "rib.stabilisering",
+  "tema": "Avstiving",
+  "sporsmal": "Definerer du et entydig horisontalt stabiliseringssystem (kjerne/skiver/kryss) tidlig i prosjektet?",
+  "hint": "",
+  "type": "ja_nei"
+ },
+ {
+  "id": 232,
+  "domene": "rib",
+  "kontekst": "rib.stabilisering",
+  "tema": "Skivevirkning",
+  "sporsmal": "Regner du dekkene som stive skiver som fordeler horisontallast til stabiliserende elementer?",
+  "hint": "",
+  "type": "ja_nei"
+ },
+ {
+  "id": 233,
+  "domene": "rib",
+  "kontekst": "rib.stabilisering",
+  "tema": "Stabilitet",
+  "sporsmal": "Fortell hvordan du fører horisontallaster (vind) ned til fundament i et flerstasjes bygg.",
+  "hint": "",
+  "type": "tale"
+ },
+ {
+  "id": 234,
+  "domene": "rib",
+  "kontekst": "rib.knekking",
+  "tema": "2. orden",
+  "sporsmal": "Vurderer du om konstruksjonen er svai (sway) og krever 2. ordens analyse?",
+  "hint": "",
+  "type": "ja_nei"
+ },
+ {
+  "id": 235,
+  "domene": "rib",
+  "kontekst": "rib.knekking",
+  "tema": "Knekking",
+  "sporsmal": "Hvordan avgjør du om du kan bruke 1. ordens analyse med forstørrelsesfaktor eller må kjøre full 2. orden?",
+  "hint": "",
+  "type": "tale"
+ },
+ {
+  "id": 236,
+  "domene": "rib",
+  "kontekst": "rib.setninger",
+  "tema": "Setninger",
+  "sporsmal": "Kontrollerer du differansesetninger mellom fundamenter, ikke bare absolutt setning?",
+  "hint": "",
+  "type": "ja_nei"
+ },
+ {
+  "id": 237,
+  "domene": "rib",
+  "kontekst": "rib.setninger",
+  "tema": "Setninger",
+  "sporsmal": "Hvordan håndterer du fare for differansesetning mellom en tung kjerne og lette yttervegger?",
+  "hint": "",
+  "type": "tale"
+ },
+ {
+  "id": 238,
+  "domene": "rib",
+  "kontekst": "rib.peler",
+  "tema": "Peletyper",
+  "sporsmal": "Velger du peletype (stål/betong, ramme/bore) i dialog med geotekniker framfor alene?",
+  "hint": "",
+  "type": "ja_nei"
+ },
+ {
+  "id": 239,
+  "domene": "rib",
+  "kontekst": "rib.peler",
+  "tema": "Peler",
+  "sporsmal": "Fortell om når du velger friksjonspeler vs spissbærende peler, og hva som styrer pelelengden.",
+  "hint": "",
+  "type": "tale"
+ },
+ {
+  "id": 240,
+  "domene": "rib",
+  "kontekst": "rib.ras",
+  "tema": "Grunnstøtte",
+  "sporsmal": "Prosjekterer du midlertidig spunt/avstivning for byggegrop i samråd med geotekniker?",
+  "hint": "",
+  "type": "ja_nei"
+ },
+ {
+  "id": 241,
+  "domene": "rib",
+  "kontekst": "rib.gulvpaagrunn",
+  "tema": "Gulv på grunn",
+  "sporsmal": "Armerer du gulv på grunn mot svinn og punktlaster selv når det ikke er bærende?",
+  "hint": "",
+  "type": "ja_nei"
+ },
+ {
+  "id": 242,
+  "domene": "rib",
+  "kontekst": "rib.gulvpaagrunn",
+  "tema": "Gulv på grunn",
+  "sporsmal": "Hva bestemmer tykkelse og armering i et industrigulv på grunn med tunge truck-laster?",
+  "hint": "",
+  "type": "tale"
+ },
+ {
+  "id": 243,
+  "domene": "rib",
+  "kontekst": "rib.snolast",
+  "tema": "Snødrift",
+  "sporsmal": "Regner du snødrift/fonner mot høydesprang og lehjørner, ikke bare jevnt snølast?",
+  "hint": "",
+  "type": "ja_nei"
+ },
+ {
+  "id": 244,
+  "domene": "rib",
+  "kontekst": "rib.snolast",
+  "tema": "Snølast",
+  "sporsmal": "Fortell hvordan takform og geometri gir snølast-tilfeller du må sjekke ut over jevn last.",
+  "hint": "",
+  "type": "tale"
+ },
+ {
+  "id": 245,
+  "domene": "rib",
+  "kontekst": "rib.vindlast",
+  "tema": "Terrengkategori",
+  "sporsmal": "Setter du terrengkategori og referansevindhastighet fra faktisk beliggenhet, ikke standardverdi?",
+  "hint": "",
+  "type": "ja_nei"
+ },
+ {
+  "id": 246,
+  "domene": "rib",
+  "kontekst": "rib.vindlast",
+  "tema": "Vindlast",
+  "sporsmal": "Hvordan angriper du vindlast på et høyt, slankt bygg — statisk vs dynamisk respons?",
+  "hint": "",
+  "type": "tale"
+ },
+ {
+  "id": 247,
+  "domene": "rib",
+  "kontekst": "rib.temperaturlast",
+  "tema": "Temperatur",
+  "sporsmal": "Tar du med temperaturlast/lengdeendring på lange, eksponerte konstruksjoner (f.eks. utkraget tak)?",
+  "hint": "",
+  "type": "ja_nei"
+ },
+ {
+  "id": 248,
+  "domene": "rib",
+  "kontekst": "rib.ulykkeslast",
+  "tema": "Ulykkeslast",
+  "sporsmal": "Vurderer du ulykkeslaster (påkjørsel, eksplosjon) for utsatte søyler i parkering/nær vei?",
+  "hint": "",
+  "type": "ja_nei"
+ },
+ {
+  "id": 249,
+  "domene": "rib",
+  "kontekst": "rib.ulykkeslast",
+  "tema": "Ulykkeslast",
+  "sporsmal": "Fortell hvordan påkjørselslast mot søyler i et parkeringsanlegg styrer dimensjon og plassering.",
+  "hint": "",
+  "type": "tale"
+ },
+ {
+  "id": 250,
+  "domene": "rib",
+  "kontekst": "rib.jordtrykk",
+  "tema": "Jordtrykk",
+  "sporsmal": "Skiller du mellom aktivt, passivt og hviletrykk når du dimensjonerer kjellervegger?",
+  "hint": "",
+  "type": "ja_nei"
+ },
+ {
+  "id": 251,
+  "domene": "rib",
+  "kontekst": "rib.jordtrykk",
+  "tema": "Jordtrykk",
+  "sporsmal": "Hvordan dimensjonerer du en kjellervegg mot jordtrykk — hvile- vs aktivt trykk, vann, terrenglast?",
+  "hint": "",
+  "type": "tale"
+ },
+ {
+  "id": 252,
+  "domene": "rib",
+  "kontekst": "rib.oppdrift",
+  "tema": "Oppdrift",
+  "sporsmal": "Kontrollerer du oppdrift/vannstand for kjellere og lavtliggende konstruksjoner?",
+  "hint": "",
+  "type": "ja_nei"
+ },
+ {
+  "id": 253,
+  "domene": "rib",
+  "kontekst": "rib.krympkryp",
+  "tema": "Kryp og svinn",
+  "sporsmal": "Tar du med kryp og svinn i langtidsnedbøyning for slanke betongdekker?",
+  "hint": "",
+  "type": "ja_nei"
+ },
+ {
+  "id": 254,
+  "domene": "rib",
+  "kontekst": "rib.krympkryp",
+  "tema": "Kryp/svinn",
+  "sporsmal": "Hvordan påvirker kryp og svinn dine valg for spennvidde og armering i betong?",
+  "hint": "",
+  "type": "tale"
+ },
+ {
+  "id": 255,
+  "domene": "rib",
+  "kontekst": "rib.grensetilstander",
+  "tema": "ULS/SLS/ALS",
+  "sporsmal": "Sjekker du både brudd (ULS), bruksgrense (SLS) og ulykke (ALS) som separate tilstander?",
+  "hint": "",
+  "type": "ja_nei"
+ },
+ {
+  "id": 256,
+  "domene": "rib",
+  "kontekst": "rib.lastkombinasjoner",
+  "tema": "Kombinasjoner",
+  "sporsmal": "Bygger du lastkombinasjoner (6.10a/b med ψ-faktorer) systematisk framfor å håndplukke verste?",
+  "hint": "",
+  "type": "ja_nei"
+ },
+ {
+  "id": 257,
+  "domene": "rib",
+  "kontekst": "rib.lastkombinasjoner",
+  "tema": "Lastkombinasjoner",
+  "sporsmal": "Fortell hvordan du sikrer at du fanger dimensjonerende lastkombinasjon uten å drukne i tilfeller.",
+  "hint": "",
+  "type": "tale"
+ },
+ {
+  "id": 258,
+  "domene": "rib",
+  "kontekst": "rib.nedboyning",
+  "tema": "Nedbøyningskrav",
+  "sporsmal": "Setter du nedbøyningsgrenser (f.eks. L/250, L/500) etter funksjon og ikke-bærende deler over?",
+  "hint": "",
+  "type": "ja_nei"
+ },
+ {
+  "id": 259,
+  "domene": "rib",
+  "kontekst": "rib.nedboyning",
+  "tema": "Nedbøyning",
+  "sporsmal": "Hvordan avgjør du nedbøyningskrav når det er glassfasade eller murvegg som henger på dekket?",
+  "hint": "",
+  "type": "tale"
+ },
+ {
+  "id": 260,
+  "domene": "rib",
+  "kontekst": "rib.utmatting",
+  "tema": "Utmatting",
+  "sporsmal": "Vurderer du utmatting (fatigue) for konstruksjoner med dynamisk/repeterende last (kran, maskin)?",
+  "hint": "",
+  "type": "ja_nei"
+ },
+ {
+  "id": 261,
+  "domene": "rib",
+  "kontekst": "rib.modellering",
+  "tema": "Analysemodell",
+  "sporsmal": "Holder du analysemodell (linjer/flater) bevisst adskilt fra fagmodellen (geometri) i BIM?",
+  "hint": "",
+  "type": "ja_nei"
+ },
+ {
+  "id": 262,
+  "domene": "rib",
+  "kontekst": "rib.modellering",
+  "tema": "Modellering",
+  "sporsmal": "Fortell hvordan du idealiserer et reelt bygg til en beregningsmodell — hva forenkler du bort?",
+  "hint": "",
+  "type": "tale"
+ },
+ {
+  "id": 263,
+  "domene": "rib",
+  "kontekst": "rib.beregningsverktoy",
+  "tema": "Kontrollregning",
+  "sporsmal": "Kontrollregner du FEM-resultater med håndberegning på overslagsnivå før du stoler på dem?",
+  "hint": "",
+  "type": "ja_nei"
+ },
+ {
+  "id": 264,
+  "domene": "rib",
+  "kontekst": "rib.beregningsverktoy",
+  "tema": "Verktøy",
+  "sporsmal": "Hvordan velger du mellom håndberegning, regneark og FEM for en gitt oppgave?",
+  "hint": "",
+  "type": "tale"
+ },
+ {
+  "id": 265,
+  "domene": "rib",
+  "kontekst": "rib.analysemodell",
+  "tema": "Opplagerbetingelser",
+  "sporsmal": "Er du bevisst på om opplagre modelleres som leddet, fast eller fjær — og hva det gjør med kreftene?",
+  "hint": "",
+  "type": "ja_nei"
+ },
+ {
+  "id": 266,
+  "domene": "rib",
+  "kontekst": "rib.analysemodell",
+  "tema": "Randbetingelser",
+  "sporsmal": "Fortell om en gang feil randbetingelse i modellen ga misvisende resultat, og hvordan du fanget det.",
+  "hint": "",
+  "type": "tale"
+ },
+ {
+  "id": 267,
+  "domene": "rib",
+  "kontekst": "rib.faser",
+  "tema": "Prosjektfaser",
+  "sporsmal": "Justerer du detaljeringsnivå i beregninger bevisst etter fase (skisse→forprosjekt→detalj)?",
+  "hint": "",
+  "type": "ja_nei"
+ },
+ {
+  "id": 268,
+  "domene": "rib",
+  "kontekst": "rib.faser",
+  "tema": "Faser",
+  "sporsmal": "Hva må være avklart i forprosjekt før du kan begynne å låse dimensjoner i detaljprosjekt?",
+  "hint": "",
+  "type": "tale"
+ },
+ {
+  "id": 269,
+  "domene": "rib",
+  "kontekst": "rib.ansvar",
+  "tema": "Ansvarsrett",
+  "sporsmal": "Er grensen for ditt PRO-ansvar (SAK10) avklart skriftlig mot andre prosjekterende i prosjektet?",
+  "hint": "",
+  "type": "ja_nei"
+ },
+ {
+  "id": 270,
+  "domene": "rib",
+  "kontekst": "rib.kvalitetssikring",
+  "tema": "Egenkontroll",
+  "sporsmal": "Har du en fast egenkontroll-rutine på beregninger før de går ut som prosjektert?",
+  "hint": "",
+  "type": "ja_nei"
+ },
+ {
+  "id": 271,
+  "domene": "rib",
+  "kontekst": "rib.kvalitetssikring",
+  "tema": "KS",
+  "sporsmal": "Fortell om din egen kvalitetssikringsrutine — hva sjekker du, og hvordan fanger du grove feil?",
+  "hint": "",
+  "type": "tale"
+ },
+ {
+  "id": 272,
+  "domene": "rib",
+  "kontekst": "rib.endringer",
+  "tema": "Endringshåndtering",
+  "sporsmal": "Logger du konsekvensen for bæresystemet når ARK gjør sene planendringer?",
+  "hint": "",
+  "type": "ja_nei"
+ },
+ {
+  "id": 273,
+  "domene": "rib",
+  "kontekst": "rib.endringer",
+  "tema": "Endringer",
+  "sporsmal": "Hvordan håndterer du en sen endring som velter en bærelinje du allerede har dimensjonert?",
+  "hint": "",
+  "type": "tale"
+ },
+ {
+  "id": 274,
+  "domene": "rib",
+  "kontekst": "rib.produksjonsunderlag",
+  "tema": "Armeringstegning",
+  "sporsmal": "Leverer du armeringstegninger/bøyelister som produksjonsklart underlag, ikke bare prinsipper?",
+  "hint": "",
+  "type": "ja_nei"
+ },
+ {
+  "id": 275,
+  "domene": "rib",
+  "kontekst": "rib.produksjonsunderlag",
+  "tema": "Underlag",
+  "sporsmal": "Hva skiller et godt produksjonsunderlag fra et som skaper spørsmål på byggeplass?",
+  "hint": "",
+  "type": "tale"
+ },
+ {
+  "id": 276,
+  "domene": "rib",
+  "kontekst": "rib.mengder",
+  "tema": "Mengdeuttrekk",
+  "sporsmal": "Trekker du mengder direkte fra modellen for kalkyle, eller regner du dem manuelt?",
+  "hint": "",
+  "type": "ja_nei"
+ },
+ {
+  "id": 277,
+  "domene": "rib",
+  "kontekst": "rib.typologi.smaahus",
+  "tema": "Småhus",
+  "sporsmal": "Bruker du forenklede/tabellbaserte løsninger for småhus framfor full beregning?",
+  "hint": "",
+  "type": "ja_nei"
+ },
+ {
+  "id": 278,
+  "domene": "rib",
+  "kontekst": "rib.typologi.naeringsbygg",
+  "tema": "Næringsbygg",
+  "sporsmal": "Fortell om det typiske bæresystemet ditt for et 4-etasjes kontorbygg — søyler, dekker, stabilisering.",
+  "hint": "",
+  "type": "tale"
+ },
+ {
+  "id": 279,
+  "domene": "rib",
+  "kontekst": "rib.typologi.hall",
+  "tema": "Haller",
+  "sporsmal": "Er rammer eller fagverk med søyler standard for store haller/lager hos deg?",
+  "hint": "",
+  "type": "ja_nei"
+ },
+ {
+  "id": 280,
+  "domene": "rib",
+  "kontekst": "rib.typologi.hall",
+  "tema": "Industrihall",
+  "sporsmal": "Hvordan bygger du opp bæresystemet for en industrihall med traverskran?",
+  "hint": "",
+  "type": "tale"
+ },
+ {
+  "id": 281,
+  "domene": "rib",
+  "kontekst": "rib.typologi.parkering",
+  "tema": "Parkeringshus",
+  "sporsmal": "Dimensjonerer du parkeringsdekker for både kjøretøylast, klorider og påkjørsel?",
+  "hint": "",
+  "type": "ja_nei"
+ },
+ {
+  "id": 282,
+  "domene": "rib",
+  "kontekst": "rib.typologi.bolig",
+  "tema": "Boligblokk",
+  "sporsmal": "Hva er de typiske bæresystem-valgene og fallgruvene i en boligblokk i betong?",
+  "hint": "",
+  "type": "tale"
+ },
+ {
+  "id": 283,
+  "domene": "rib",
+  "kontekst": "rib.grensesnitt.geo",
+  "tema": "Geotekniker",
+  "sporsmal": "Får du geoteknisk rapport med dimensjonerende grunnparametere før du fastsetter fundament?",
+  "hint": "",
+  "type": "ja_nei"
+ },
+ {
+  "id": 284,
+  "domene": "rib",
+  "kontekst": "rib.grensesnitt.geo",
+  "tema": "Geo-grensesnitt",
+  "sporsmal": "Fortell om samspillet med geotekniker — hva leverer du til dem, hva må du ha tilbake?",
+  "hint": "",
+  "type": "tale"
+ },
+ {
+  "id": 285,
+  "domene": "rib",
+  "kontekst": "rib.grensesnitt.riv",
+  "tema": "RIV",
+  "sporsmal": "Avklarer du store tekniske sjakter og hovedføringer med RIV før du fastsetter dekkegeometri?",
+  "hint": "",
+  "type": "ja_nei"
+ },
+ {
+  "id": 286,
+  "domene": "rib",
+  "kontekst": "rib.grensesnitt.rie",
+  "tema": "RIE",
+  "sporsmal": "Koordinerer du innstøpsgods og føringer for elektro (RIE) inn i betongen før støp?",
+  "hint": "",
+  "type": "ja_nei"
+ },
+ {
+  "id": 287,
+  "domene": "rib",
+  "kontekst": "rib.grensesnitt.entreprenor",
+  "tema": "Entreprenør",
+  "sporsmal": "Hvordan påvirker entreprenørens metode og utstyr dine valg — plasstøpt vs prefab, elementstørrelse?",
+  "hint": "",
+  "type": "tale"
+ },
+ {
+  "id": 288,
+  "domene": "rib",
+  "kontekst": "rib.grensesnitt.prefab",
+  "tema": "Elementleverandør",
+  "sporsmal": "Overlater du detaljprosjektering av prefab-elementer til leverandøren mot dine grensesnittkrav?",
+  "hint": "",
+  "type": "ja_nei"
+ },
+ {
+  "id": 289,
+  "domene": "rib",
+  "kontekst": "rib.grensesnitt.prefab",
+  "tema": "Prefab",
+  "sporsmal": "Fortell hvordan ansvaret deles med en hulldekke-/element-leverandør — hva eier du, hva eier de?",
+  "hint": "",
+  "type": "tale"
+ },
+ {
+  "id": 290,
+  "domene": "rib",
+  "kontekst": "rib.grensesnitt.riaku",
+  "tema": "Lyd (RIAku)",
+  "sporsmal": "Tilpasser du dekketykkelse/oppbygning etter trinnlyd- og luftlydkrav fra akustiker?",
+  "hint": "",
+  "type": "ja_nei"
+ },
+ {
+  "id": 291,
+  "domene": "rib",
+  "kontekst": "rib.grensesnitt.riaku",
+  "tema": "Lyd",
+  "sporsmal": "Hvordan drar lyd- og vibrasjonskrav bæresystemet i en annen retning enn ren styrke ville tilsagt?",
+  "hint": "",
+  "type": "tale"
+ },
+ {
+  "id": 292,
+  "domene": "rib",
+  "kontekst": "rib.klimagass",
+  "tema": "EPD",
+  "sporsmal": "Bruker du EPD-tall og klimagassregnskap (TEK17 §17) aktivt når du velger materiale og mengde?",
+  "hint": "",
+  "type": "ja_nei"
+ },
+ {
+  "id": 293,
+  "domene": "rib",
+  "kontekst": "rib.klimagass",
+  "tema": "Lavkarbon",
+  "sporsmal": "Hvor i bæresystemet ligger de største klimagass-kuttene, og hva koster de i praksis?",
+  "hint": "",
+  "type": "tale"
+ },
+ {
+  "id": 294,
+  "domene": "rib",
+  "kontekst": "rib.ombruk",
+  "tema": "Ombruk stål",
+  "sporsmal": "Vurderer du ombruk av stålprofiler/hulldekker der byggets utforming tillater det?",
+  "hint": "",
+  "type": "ja_nei"
+ },
+ {
+  "id": 295,
+  "domene": "rib",
+  "kontekst": "rib.ombruk",
+  "tema": "Ombruk",
+  "sporsmal": "Hva må til for at ombruk av bærende elementer skal være realistisk — dokumentasjon, kapasitet, tid?",
+  "hint": "",
+  "type": "tale"
+ },
+ {
+  "id": 296,
+  "domene": "rib",
+  "kontekst": "rib.demonterbarhet",
+  "tema": "Design for ombruk",
+  "sporsmal": "Designer du forbindelser for demontering (skru framfor støp) når byggherren vil ha ombrukbarhet?",
+  "hint": "",
+  "type": "ja_nei"
+ },
+ {
+  "id": 297,
+  "domene": "rib",
+  "kontekst": "rib.lcc",
+  "tema": "Levetidskostnad",
+  "sporsmal": "Veier du levetidskostnad (vedlikehold, fleksibilitet) mot investering når du velger bæresystem?",
+  "hint": "",
+  "type": "ja_nei"
+ },
+ {
+  "id": 298,
+  "domene": "rib",
+  "kontekst": "rib.lcc",
+  "tema": "LCC",
+  "sporsmal": "Fortell om et valg der dyrere bæresystem ga lavere levetidskostnad — og hvordan du argumenterte det.",
+  "hint": "",
+  "type": "tale"
+ },
+ {
+  "id": 299,
+  "domene": "rib",
+  "kontekst": "rib.fdv",
+  "tema": "Inspeksjon",
+  "sporsmal": "Tenker du inspiserbarhet inn i utsatte konstruksjoner (P-hus, bruer, fasadefester)?",
+  "hint": "",
+  "type": "ja_nei"
+ },
+ {
+  "id": 300,
+  "domene": "rib",
+  "kontekst": "rib.fdv",
+  "tema": "FDV",
+  "sporsmal": "Hva legger du inn i FDV-dokumentasjonen for bæresystemet — hva skal driftsavdelingen passe på?",
+  "hint": "",
+  "type": "tale"
+ },
+ {
+  "id": 301,
+  "domene": "rib",
+  "kontekst": "rib.klimatilpasning",
+  "tema": "Klimatilpasning",
+  "sporsmal": "Legger du på klimapåslag for økt snø-/regnlast i tråd med nyere klimadata der det er relevant?",
+  "hint": "",
+  "type": "ja_nei"
+ },
+ {
+  "id": 302,
+  "domene": "rib",
+  "kontekst": "rib.fukt",
+  "tema": "Byggfukt",
+  "sporsmal": "Tar du hensyn til uttørkingstid og byggfukt i betong når framdriften presser på?",
+  "hint": "",
+  "type": "ja_nei"
+ },
+ {
+  "id": 303,
+  "domene": "rib",
+  "kontekst": "rib.fukt",
+  "tema": "Fukt",
+  "sporsmal": "Fortell om fukthensyn i konstruksjon — betonguttørking, innbygd fukt i tre, kondens i kalde konstruksjoner.",
+  "hint": "",
+  "type": "tale"
+ },
+ {
+  "id": 304,
+  "domene": "rib",
+  "kontekst": "rib.hms",
+  "tema": "SHA",
+  "sporsmal": "Bidrar du med RIB-innspill til SHA-plan om risiko under montasje og riving?",
+  "hint": "",
+  "type": "ja_nei"
+ },
+ {
+  "id": 305,
+  "domene": "rib",
+  "kontekst": "rib.hms",
+  "tema": "HMS",
+  "sporsmal": "Hvordan tenker du sikkerhet for de som bygger — montasjerekkefølge, midlertidig stabilitet, tunge løft?",
+  "hint": "",
+  "type": "tale"
+ },
+ {
+  "id": 306,
+  "domene": "rib",
+  "kontekst": "rib.overdekning",
+  "tema": "Overdekning",
+  "sporsmal": "Setter du armeringsoverdekning etter eksponeringsklasse OG brannkrav, det strengeste styrer?",
+  "hint": "",
+  "type": "ja_nei"
+ },
+ {
+  "id": 307,
+  "domene": "rib",
+  "kontekst": "rib.skjaerkraft",
+  "tema": "Skjær",
+  "sporsmal": "Kontrollerer du gjennomlokking (punching) rundt søyler i flatdekker særskilt?",
+  "hint": "",
+  "type": "ja_nei"
+ },
+ {
+  "id": 308,
+  "domene": "rib",
+  "kontekst": "rib.skjaerkraft",
+  "tema": "Skjær",
+  "sporsmal": "Fortell om gjennomlokking i flatdekker — når blir det dimensjonerende og hva gjør du med det?",
+  "hint": "",
+  "type": "tale"
+ },
+ {
+  "id": 309,
+  "domene": "rib",
+  "kontekst": "rib.riss",
+  "tema": "Rissvidde",
+  "sporsmal": "Hvordan styrer du rissvidde i praksis — armeringsdiameter, senteravstand, betongkvalitet?",
+  "hint": "",
+  "type": "tale"
+ },
+ {
+  "id": 310,
+  "domene": "rib",
+  "kontekst": "rib.utsparinger",
+  "tema": "Utsparinger",
+  "sporsmal": "Har du en fast regel for maks utsparingsstørrelse i bjelker/dekker før det krever egen kontroll?",
+  "hint": "",
+  "type": "ja_nei"
+ },
+ {
+  "id": 311,
+  "domene": "rib",
+  "kontekst": "rib.toleranser",
+  "tema": "Toleransekjeder",
+  "sporsmal": "Fortell om et grensesnitt der summen av toleranser (prefab møter plasstøpt) nesten gikk galt.",
+  "hint": "",
+  "type": "tale"
+ },
+ {
+  "id": 312,
+  "domene": "rib",
+  "kontekst": "rib.midlertidige",
+  "tema": "Midlertidige faser",
+  "sporsmal": "Sjekker du bæreevne i midlertidige tilstander (før dekke er herdet, før avstiving er montert)?",
+  "hint": "",
+  "type": "ja_nei"
+ },
+ {
+  "id": 313,
+  "domene": "rib",
+  "kontekst": "rib.midlertidige",
+  "tema": "Midlertidig",
+  "sporsmal": "Fortell om en konstruksjon som var svakest i en mellomfase, ikke i ferdig tilstand.",
+  "hint": "",
+  "type": "tale"
+ },
+ {
+  "id": 314,
+  "domene": "rib",
+  "kontekst": "rib.progressivt",
+  "tema": "Nøkkelelementer",
+  "sporsmal": "Identifiserer du nøkkelelementer som ikke får svikte, og gir dem ekstra sikkerhet?",
+  "hint": "",
+  "type": "ja_nei"
+ },
+ {
+  "id": 315,
+  "domene": "rib",
+  "kontekst": "rib.progressivt",
+  "tema": "Alternative lastveier",
+  "sporsmal": "Hvordan sikrer du en alternativ lastvei hvis en søyle fjernes — konkret grep i et bygg du har gjort?",
+  "hint": "",
+  "type": "tale"
+ },
+ {
+  "id": 316,
+  "domene": "rib",
+  "kontekst": "rib.armering.forankring",
+  "tema": "Forankring",
+  "sporsmal": "Kontrollerer du forankringslengder og skjøtelengder eksplisitt, ikke bare tommelfingerregel?",
+  "hint": "",
+  "type": "ja_nei"
+ },
+ {
+  "id": 317,
+  "domene": "rib",
+  "kontekst": "rib.armering.detaljering",
+  "tema": "Armeringsdetaljer",
+  "sporsmal": "Hva er de vanligste armeringsdetaljene som blir feil på tegning — hjørner, opplegg, skjøter?",
+  "hint": "",
+  "type": "tale"
+ },
+ {
+  "id": 318,
+  "domene": "rib",
+  "kontekst": "rib.betong.stopeteknikk",
+  "tema": "Arbeidsfuger",
+  "sporsmal": "Angir du plassering av arbeidsfuger/støpeskjøter bevisst der de gjør minst skade?",
+  "hint": "",
+  "type": "ja_nei"
+ },
+ {
+  "id": 319,
+  "domene": "rib",
+  "kontekst": "rib.stal.korrosjon",
+  "tema": "Korrosjonsbeskyttelse",
+  "sporsmal": "Spesifiserer du korrosjonsklasse og overflatebehandling (varmforsinking/maling) etter miljø?",
+  "hint": "",
+  "type": "ja_nei"
+ },
+ {
+  "id": 320,
+  "domene": "rib",
+  "kontekst": "rib.stal.instabilitet",
+  "tema": "Stegknekking",
+  "sporsmal": "Kontrollerer du steg-/flensbukling for slanke, sveiste stålprofiler?",
+  "hint": "",
+  "type": "ja_nei"
+ },
+ {
+  "id": 321,
+  "domene": "rib",
+  "kontekst": "rib.stal.sprobrudd",
+  "tema": "Sprøbrudd",
+  "sporsmal": "Velger du stålseighet (J-krav) etter laveste brukstemperatur for utvendige konstruksjoner?",
+  "hint": "",
+  "type": "ja_nei"
+ },
+ {
+  "id": 322,
+  "domene": "rib",
+  "kontekst": "rib.tre.brann",
+  "tema": "Forkulling",
+  "sporsmal": "Regner du redusert tverrsnitt etter forkullingshastighet for brannlast i tre?",
+  "hint": "",
+  "type": "ja_nei"
+ },
+ {
+  "id": 323,
+  "domene": "rib",
+  "kontekst": "rib.tre.langtid",
+  "tema": "Kryp klasse 2/3",
+  "sporsmal": "Setter du deformasjonsfaktor (kdef) etter riktig klimaklasse for langtidsnedbøyning i tre?",
+  "hint": "",
+  "type": "ja_nei"
+ },
+ {
+  "id": 324,
+  "domene": "rib",
+  "kontekst": "rib.tre.lvl",
+  "tema": "LVL/Kerto",
+  "sporsmal": "Når velger du LVL framfor limtre — hva gir finérlaminatet deg som limtre ikke gir?",
+  "hint": "",
+  "type": "tale"
+ },
+ {
+  "id": 325,
+  "domene": "rib",
+  "kontekst": "rib.detaljer.opplegg",
+  "tema": "Opplegg",
+  "sporsmal": "Fortell hvordan du utformer et godt bjelke-opplegg — opplagslengde, sentrering, toleranse.",
+  "hint": "",
+  "type": "tale"
+ },
+ {
+  "id": 326,
+  "domene": "rib",
+  "kontekst": "rib.detaljer.balkong",
+  "tema": "Utkraget balkong",
+  "sporsmal": "Løser du kuldebro og kraging i betongbalkonger med bevisst valgt isokurv/konsoll?",
+  "hint": "",
+  "type": "ja_nei"
+ },
+ {
+  "id": 327,
+  "domene": "rib",
+  "kontekst": "rib.detaljer.balkong",
+  "tema": "Balkong",
+  "sporsmal": "Hva er utfordringene med en utkraget balkong — nedbøyning, kuldebro, riss, fukt?",
+  "hint": "",
+  "type": "tale"
+ },
+ {
+  "id": 328,
+  "domene": "rib",
+  "kontekst": "rib.detaljer.fasade",
+  "tema": "Fasadeinnfesting",
+  "sporsmal": "Dimensjonerer du innfestinger for tunge fasader (tegl, betongelement) med bevisst lastvei til bæringen?",
+  "hint": "",
+  "type": "ja_nei"
+ },
+ {
+  "id": 329,
+  "domene": "rib",
+  "kontekst": "rib.trapp",
+  "tema": "Trapper",
+  "sporsmal": "Prosjekterer du prefab betongtrapper med opplegg og lyd (bruddstykke mot trinnlyd) bevisst?",
+  "hint": "",
+  "type": "ja_nei"
+ },
+ {
+  "id": 330,
+  "domene": "rib",
+  "kontekst": "rib.heissjakt",
+  "tema": "Heissjakt",
+  "sporsmal": "Bruker du heis-/trappekjerne som primært stabiliserende element der det er mulig?",
+  "hint": "",
+  "type": "ja_nei"
+ },
+ {
+  "id": 331,
+  "domene": "rib",
+  "kontekst": "rib.kran",
+  "tema": "Kranfundament",
+  "sporsmal": "Hvordan dimensjonerer du fundament/forankring for tårnkran på byggeplass?",
+  "hint": "",
+  "type": "tale"
+ },
+ {
+  "id": 332,
+  "domene": "rib",
+  "kontekst": "rib.vegg.betongvegg",
+  "tema": "Bærende betongvegg",
+  "sporsmal": "Regner du bærende betongvegger for både vertikallast og skivevirkning samtidig?",
+  "hint": "",
+  "type": "ja_nei"
+ },
+ {
+  "id": 333,
+  "domene": "rib",
+  "kontekst": "rib.tak.flatt",
+  "tema": "Ponding",
+  "sporsmal": "Kontrollerer du vannansamling (ponding) på flate tak med liten helning?",
+  "hint": "",
+  "type": "ja_nei"
+ },
+ {
+  "id": 334,
+  "domene": "rib",
+  "kontekst": "rib.tak.gronn",
+  "tema": "Grønne tak",
+  "sporsmal": "Legger du på vannmettet lastverdi for grønne tak / blågrønne løsninger i dimensjoneringen?",
+  "hint": "",
+  "type": "ja_nei"
+ },
+ {
+  "id": 335,
+  "domene": "rib",
+  "kontekst": "rib.tak.solcelle",
+  "tema": "Solcellelast",
+  "sporsmal": "Tar du med last og vindsug for solcelleanlegg når taket skal bære dem?",
+  "hint": "",
+  "type": "ja_nei"
+ },
+ {
+  "id": 336,
+  "domene": "rib",
+  "kontekst": "rib.laster.folkemengde",
+  "tema": "Folkemengde",
+  "sporsmal": "Vurderer du resonans/rytmisk last for tribuner, dansegulv og gangbaner med mye folk?",
+  "hint": "",
+  "type": "ja_nei"
+ },
+ {
+  "id": 337,
+  "domene": "rib",
+  "kontekst": "rib.laster.rekkverk",
+  "tema": "Rekkverkslast",
+  "sporsmal": "Setter du horisontal rekkverkslast etter bygningskategori (bolig vs forsamling)?",
+  "hint": "",
+  "type": "ja_nei"
+ },
+ {
+  "id": 338,
+  "domene": "rib",
+  "kontekst": "rib.dimklasse.cc",
+  "tema": "Pålitelighetsklasse",
+  "sporsmal": "Fastsetter du pålitelighetsklasse (CC1–CC3) bevisst per bygg og lar den styre lastfaktorer/kontroll?",
+  "hint": "",
+  "type": "ja_nei"
+ },
+ {
+  "id": 339,
+  "domene": "rib",
+  "kontekst": "rib.dimklasse.cc",
+  "tema": "CC/RC-klasser",
+  "sporsmal": "Fortell hvordan du plasserer et bygg i riktig pålitelighets-/kontrollklasse, og hva det utløser.",
+  "hint": "",
+  "type": "tale"
+ },
+ {
+  "id": 340,
+  "domene": "rib",
+  "kontekst": "rib.geometri",
+  "tema": "Kotehøyder",
+  "sporsmal": "Fastsetter du UK/OK-koter for bærende deler tidlig så tekniske fag har fast referanse?",
+  "hint": "",
+  "type": "ja_nei"
+ },
+ {
+  "id": 341,
+  "domene": "rib",
+  "kontekst": "rib.frost",
+  "tema": "Frostsikring",
+  "sporsmal": "Frostsikrer du fundamenter til frostfri dybde eller med isolasjon der grunnen er telefarlig?",
+  "hint": "",
+  "type": "ja_nei"
+ },
+ {
+  "id": 342,
+  "domene": "rib",
+  "kontekst": "rib.grunnvann",
+  "tema": "Grunnvann",
+  "sporsmal": "Innhenter du grunnvannstand før du prosjekterer kjeller mot vanntrykk og oppdrift?",
+  "hint": "",
+  "type": "ja_nei"
+ },
+ {
+  "id": 343,
+  "domene": "rib",
+  "kontekst": "rib.forsterkning",
+  "tema": "Forsterkning",
+  "sporsmal": "Fortell om metoder du bruker for å forsterke eksisterende konstruksjon — påstøp, stålplate, karbonfiber.",
+  "hint": "",
+  "type": "tale"
+ },
+ {
+  "id": 344,
+  "domene": "rib",
+  "kontekst": "rib.tilstandsvurdering",
+  "tema": "Tilstand",
+  "sporsmal": "Krever du fysisk tilstandsvurdering (armeringssøk, kjerneprøve) før du regner på gammel betong?",
+  "hint": "",
+  "type": "ja_nei"
+ },
+ {
+  "id": 345,
+  "domene": "rib",
+  "kontekst": "rib.riving",
+  "tema": "Riving",
+  "sporsmal": "Prosjekterer du rivesekvens/midlertidig avstiving ved delvis riving i eksisterende bygg?",
+  "hint": "",
+  "type": "ja_nei"
+ },
+ {
+  "id": 346,
+  "domene": "rib",
+  "kontekst": "rib.brann.avskalling",
+  "tema": "Avskalling",
+  "sporsmal": "Vurderer du eksplosiv avskalling av høyfast betong ved brann (fiberinnblanding)?",
+  "hint": "",
+  "type": "ja_nei"
+ },
+ {
+  "id": 347,
+  "domene": "rib",
+  "kontekst": "rib.dynamikk.maskin",
+  "tema": "Maskinfundament",
+  "sporsmal": "Hvordan dimensjonerer du et maskinfundament mot vibrasjon — masse, demping, egenfrekvens?",
+  "hint": "",
+  "type": "tale"
+ },
+ {
+  "id": 348,
+  "domene": "rib",
+  "kontekst": "rib.seismikk.ikkebaerende",
+  "tema": "Festing ved seismikk",
+  "sporsmal": "Selv når hovedbæringen slipper jordskjelv — sikrer du tunge ikke-bærende deler mot rystelser der det kreves?",
+  "hint": "",
+  "type": "ja_nei"
+ },
+ {
+  "id": 349,
+  "domene": "rib",
+  "kontekst": "rib.vind.dynamisk",
+  "tema": "Virvelavløsning",
+  "sporsmal": "Sjekker du virvelavløsning/svingninger for slanke, høye elementer (piper, master, søyler)?",
+  "hint": "",
+  "type": "ja_nei"
+ },
+ {
+  "id": 350,
+  "domene": "rib",
+  "kontekst": "rib.stabilitet.torsjon",
+  "tema": "Torsjon",
+  "sporsmal": "Kontrollerer du vridning når stabiliserende kjerne ligger eksentrisk i plan?",
+  "hint": "",
+  "type": "ja_nei"
+ },
+ {
+  "id": 351,
+  "domene": "rib",
+  "kontekst": "rib.stabilitet.myktplan",
+  "tema": "Mykt plan",
+  "sporsmal": "Passer du på at ingen etasje blir et mykt plan (soft storey) med brå stivhetsendring?",
+  "hint": "",
+  "type": "ja_nei"
+ },
+ {
+  "id": 352,
+  "domene": "rib",
+  "kontekst": "rib.fundament.eksentrisk",
+  "tema": "Eksentrisk last",
+  "sporsmal": "Dimensjonerer du grensefundament mot nabogrense for eksentrisk last og velt?",
+  "hint": "",
+  "type": "ja_nei"
+ },
+ {
+  "id": 353,
+  "domene": "rib",
+  "kontekst": "rib.spunt",
+  "tema": "Spunt",
+  "sporsmal": "Fortell om samspillet mellom spuntvegg, avstivning og fundamentering i en dyp byggegrop.",
+  "hint": "",
+  "type": "tale"
+ },
+ {
+  "id": 354,
+  "domene": "rib",
+  "kontekst": "rib.grensesnitt.brannradgiver",
+  "tema": "Brannrådgiver",
+  "sporsmal": "Får du R-krav og brannstrategi fra brannrådgiver før du materialvelger bæringen?",
+  "hint": "",
+  "type": "ja_nei"
+ },
+ {
+  "id": 355,
+  "domene": "rib",
+  "kontekst": "rib.grensesnitt.byggherre",
+  "tema": "Byggherre",
+  "sporsmal": "Hvordan balanserer du byggherrens ambisjon (arkitektur, miljø) mot budsjett i bæresystemet?",
+  "hint": "",
+  "type": "tale"
+ },
+ {
+  "id": 356,
+  "domene": "rib",
+  "kontekst": "rib.okonomi",
+  "tema": "Materialoptimalisering",
+  "sporsmal": "Hvor henter du de store kostnadskuttene i et bæresystem uten å ofre robusthet?",
+  "hint": "",
+  "type": "tale"
+ },
+ {
+  "id": 357,
+  "domene": "rib",
+  "kontekst": "rib.standardisering",
+  "tema": "Repetisjon",
+  "sporsmal": "Standardiserer du søyle-/dekke-typer bevisst for å få repetisjon og enklere bygging?",
+  "hint": "",
+  "type": "ja_nei"
+ },
+ {
+  "id": 358,
+  "domene": "rib",
+  "kontekst": "rib.prefab.montasje",
+  "tema": "Montasjerekkefølge",
+  "sporsmal": "Hvordan planlegger du montasjerekkefølge så konstruksjonen er stabil i hvert trinn?",
+  "hint": "",
+  "type": "tale"
+ },
+ {
+  "id": 359,
+  "domene": "rib",
+  "kontekst": "rib.komfort.hoyhus",
+  "tema": "Vindakselerasjon",
+  "sporsmal": "Vurderer du komfortakselerasjon (vind) i toppetasjer for høye, slanke bygg?",
+  "hint": "",
+  "type": "ja_nei"
+ },
+ {
+  "id": 360,
+  "domene": "rib",
+  "kontekst": "rib.laster.ombygging",
+  "tema": "Last i drift",
+  "sporsmal": "Sjekker du at eksisterende bæring tåler last under en ombygging med bygget i drift?",
+  "hint": "",
+  "type": "ja_nei"
+ },
+ {
+  "id": 361,
+  "domene": "rib",
+  "kontekst": "rib.betong.selvkomprimerende",
+  "tema": "SKB",
+  "sporsmal": "Bruker du selvkomprimerende betong (SKB) der armeringen er tett eller støp er vanskelig?",
+  "hint": "",
+  "type": "ja_nei"
+ },
+ {
+  "id": 362,
+  "domene": "rib",
+  "kontekst": "rib.betong.massiv",
+  "tema": "Herdevarme",
+  "sporsmal": "Vurderer du herdevarme/temperaturriss i massive betongtverrsnitt (fundamentklosser, tykke plater)?",
+  "hint": "",
+  "type": "ja_nei"
+ },
+ {
+  "id": 363,
+  "domene": "rib",
+  "kontekst": "rib.betong.fiber",
+  "tema": "Fiberarmering",
+  "sporsmal": "Erstatter du deler av slakkarmeringen med stål-/plastfiber i gulv på grunn?",
+  "hint": "",
+  "type": "ja_nei"
+ },
+ {
+  "id": 364,
+  "domene": "rib",
+  "kontekst": "rib.stal.brannmaling",
+  "tema": "Brannmaling",
+  "sporsmal": "Fortell om når du velger brannmaling, innkassing eller overdimensjonering for å nå R-krav i stål.",
+  "hint": "",
+  "type": "tale"
+ },
+ {
+  "id": 365,
+  "domene": "rib",
+  "kontekst": "rib.stal.hulprofil",
+  "tema": "Hulprofiler",
+  "sporsmal": "Foretrekker du hulprofiler (RHS/CHS) framfor åpne profiler der torsjon eller estetikk teller?",
+  "hint": "",
+  "type": "ja_nei"
+ },
+ {
+  "id": 366,
+  "domene": "rib",
+  "kontekst": "rib.tre.lydgulv",
+  "tema": "Trelydgulv",
+  "sporsmal": "Hvordan løser du trinnlyd i tredekker uten å tape for mye byggehøyde?",
+  "hint": "",
+  "type": "tale"
+ },
+ {
+  "id": 367,
+  "domene": "rib",
+  "kontekst": "rib.tre.hybrid",
+  "tema": "Hybrid tre-betong",
+  "sporsmal": "Bruker du tre-betong-samvirkedekker for å kombinere trestivhet og betongmasse?",
+  "hint": "",
+  "type": "ja_nei"
+ },
+ {
+  "id": 368,
+  "domene": "rib",
+  "kontekst": "rib.dekke.plate",
+  "tema": "Flatdekke",
+  "sporsmal": "Velger du flatdekke uten bjelker der fri innredning og lav byggehøyde er viktig?",
+  "hint": "",
+  "type": "ja_nei"
+ },
+ {
+  "id": 369,
+  "domene": "rib",
+  "kontekst": "rib.bjelke.slank",
+  "tema": "Slanke dekker",
+  "sporsmal": "Fortell om avveiningen mellom slankt dekke (lav byggehøyde) og vibrasjon/nedbøyning.",
+  "hint": "",
+  "type": "tale"
+ },
+ {
+  "id": 370,
+  "domene": "rib",
+  "kontekst": "rib.soyle.stal-i-betong",
+  "tema": "Innstøpt søyle",
+  "sporsmal": "Støper du inn stålsøyler i betong for brann/estetikk der det er hensiktsmessig?",
+  "hint": "",
+  "type": "ja_nei"
+ },
+ {
+  "id": 371,
+  "domene": "rib",
+  "kontekst": "rib.fundament.ringmur",
+  "tema": "Ringmur",
+  "sporsmal": "Detaljerer du ringmur mot gulv på grunn med bevisst kuldebrobryter og fuktsperre?",
+  "hint": "",
+  "type": "ja_nei"
+ },
+ {
+  "id": 372,
+  "domene": "rib",
+  "kontekst": "rib.fundament.plate-paa-mark",
+  "tema": "Plate på mark",
+  "sporsmal": "Fortell hvordan du bygger opp en isolert plate på mark — laglagvis fra grunn til betong.",
+  "hint": "",
+  "type": "tale"
+ },
+ {
+  "id": 373,
+  "domene": "rib",
+  "kontekst": "rib.laster.nytte-kategori",
+  "tema": "Nyttelastkategori",
+  "sporsmal": "Setter du nyttelast etter faktisk brukskategori (A–E) og ikke bare høyeste for å være trygg?",
+  "hint": "",
+  "type": "ja_nei"
+ },
+ {
+  "id": 374,
+  "domene": "rib",
+  "kontekst": "rib.laster.snorydding",
+  "tema": "Snørydding/is",
+  "sporsmal": "Tar du høyde for issprang og snø som skrapes/pløyes sammen på tak med aktivitet?",
+  "hint": "",
+  "type": "ja_nei"
+ },
+ {
+  "id": 375,
+  "domene": "rib",
+  "kontekst": "rib.laster.dynamisk-utstyr",
+  "tema": "Utstyrslast",
+  "sporsmal": "Hvordan håndterer du tunge, flyttbare utstyrslaster (MR, serverrack) som byggherren ikke har låst?",
+  "hint": "",
+  "type": "tale"
+ },
+ {
+  "id": 376,
+  "domene": "rib",
+  "kontekst": "rib.geoteknikk.kvikkleire",
+  "tema": "Kvikkleire",
+  "sporsmal": "Fortell hvordan kvikkleire endrer hele fundament- og gravestrategien i et prosjekt.",
+  "hint": "",
+  "type": "tale"
+ },
+ {
+  "id": 377,
+  "domene": "rib",
+  "kontekst": "rib.geoteknikk.paaledning",
+  "tema": "Poretrykk",
+  "sporsmal": "Koordinerer du poretrykk/oppdrift og pele-/fundamentvalg tett med geotekniker i bløt grunn?",
+  "hint": "",
+  "type": "ja_nei"
+ },
+ {
+  "id": 378,
+  "domene": "rib",
+  "kontekst": "rib.stabilitet.vindkryss",
+  "tema": "Vindkryss",
+  "sporsmal": "Bruker du diagonale vindkryss der kjerne alene ikke gir nok stabilitet i stålbygg?",
+  "hint": "",
+  "type": "ja_nei"
+ },
+ {
+  "id": 379,
+  "domene": "rib",
+  "kontekst": "rib.stabilitet.momentramme",
+  "tema": "Momentramme",
+  "sporsmal": "Når velger du momentstive rammer framfor avstivende kjerne/kryss for horisontalstabilitet?",
+  "hint": "",
+  "type": "tale"
+ },
+ {
+  "id": 380,
+  "domene": "rib",
+  "kontekst": "rib.detaljer.kuldebro",
+  "tema": "Kuldebro",
+  "sporsmal": "Balanserer du kuldebrobryter (varme) mot lastvei (styrke) i gjennomgående betongdetaljer?",
+  "hint": "",
+  "type": "ja_nei"
+ },
+ {
+  "id": 381,
+  "domene": "rib",
+  "kontekst": "rib.detaljer.dilatasjon",
+  "tema": "Dilatasjonsdetalj",
+  "sporsmal": "Hvordan utformer du en dilatasjonsfuge så begge sider bæres og bygget fortsatt er tett?",
+  "hint": "",
+  "type": "tale"
+ },
+ {
+  "id": 382,
+  "domene": "rib",
+  "kontekst": "rib.detaljer.forankring-vind",
+  "tema": "Vindforankring",
+  "sporsmal": "Kontrollerer du forankring mot vindløft for lette tak og lette bygg?",
+  "hint": "",
+  "type": "ja_nei"
+ },
+ {
+  "id": 383,
+  "domene": "rib",
+  "kontekst": "rib.miljo.trekonstruksjon",
+  "tema": "Tre for klima",
+  "sporsmal": "Når gir tre reell klimagevinst framfor lavkarbonbetong, og når er det bare grønnvasking?",
+  "hint": "",
+  "type": "tale"
+ },
+ {
+  "id": 384,
+  "domene": "rib",
+  "kontekst": "rib.miljo.armeringsmengde",
+  "tema": "Armeringsoptimalisering",
+  "sporsmal": "Optimaliserer du armeringsmengde aktivt for klima/kost, eller runder du opp for enkelhet?",
+  "hint": "",
+  "type": "ja_nei"
+ },
+ {
+  "id": 385,
+  "domene": "rib",
+  "kontekst": "rib.kontroll.uavhengig",
+  "tema": "Uavhengig kontroll",
+  "sporsmal": "Fortell hvordan du legger opp for uavhengig kontroll så den ikke blir en flaskehals sent i løpet.",
+  "hint": "",
+  "type": "tale"
+ },
+ {
+  "id": 386,
+  "domene": "rib",
+  "kontekst": "rib.dokumentasjon.beregningsrapport",
+  "tema": "Beregningsrapport",
+  "sporsmal": "Skriver du beregningsrapport slik at en tredjepart kan følge lastvei og kontroll uten deg til stede?",
+  "hint": "",
+  "type": "ja_nei"
+ },
+ {
+  "id": 387,
+  "domene": "rib",
+  "kontekst": "rib.dokumentasjon.forutsetninger",
+  "tema": "Forutsetninger",
+  "sporsmal": "Hvordan dokumenterer du forutsetninger og antakelser så de ikke går tapt når prosjektet skifter hender?",
+  "hint": "",
+  "type": "tale"
+ },
+ {
+  "id": 388,
+  "domene": "rib",
+  "kontekst": "rib.byggbarhet.elementstorrelse",
+  "tema": "Elementstørrelse",
+  "sporsmal": "Begrenser du element-/komponentstørrelser til det som kan transporteres og løftes på plass?",
+  "hint": "",
+  "type": "ja_nei"
+ },
+ {
+  "id": 389,
+  "domene": "rib",
+  "kontekst": "rib.byggbarhet.veir",
+  "tema": "Værutsatt montasje",
+  "sporsmal": "Hvordan påvirker montasje i vind/kulde/vinter dine valg av system og detaljer?",
+  "hint": "",
+  "type": "tale"
+ },
+ {
+  "id": 390,
+  "domene": "rib",
+  "kontekst": "rib.eksisterende.pabygg",
+  "tema": "Påbygg",
+  "sporsmal": "Hvordan sjekker du om en eksisterende konstruksjon tåler et påbygg i høyden?",
+  "hint": "",
+  "type": "tale"
+ },
+ {
+  "id": 391,
+  "domene": "rib",
+  "kontekst": "rib.eksisterende.dokumentasjon",
+  "tema": "Manglende tegninger",
+  "sporsmal": "Antar du konservativt og verifiserer med prøver når originaltegninger mangler for gammelt bygg?",
+  "hint": "",
+  "type": "ja_nei"
+ },
+ {
+  "id": 392,
+  "domene": "rib",
+  "kontekst": "rib.utforelse.exc",
+  "tema": "Utførelsesklasse",
+  "sporsmal": "Hvordan velger du utførelsesklasse (EXC1–4) for stål og hva utløser det i kontroll og sveis?",
+  "hint": "",
+  "type": "tale"
+ },
+ {
+  "id": 393,
+  "domene": "rib",
+  "kontekst": "rib.utforelse.betong",
+  "tema": "Betong-utførelse",
+  "sporsmal": "Angir du utførelseskrav (herdetiltak, komprimering, kontroll) og ikke bare materialkvalitet?",
+  "hint": "",
+  "type": "ja_nei"
+ },
+ {
+  "id": 394,
+  "domene": "rib",
+  "kontekst": "rib.grensesnitt.ark.himling",
+  "tema": "Himling/føringssoner",
+  "sporsmal": "Låser du føringssoner over himling med ARK/RIV så bjelkehøyder ikke spiser romhøyden?",
+  "hint": "",
+  "type": "ja_nei"
+ },
+ {
+  "id": 395,
+  "domene": "rib",
+  "kontekst": "rib.grensesnitt.landskap",
+  "tema": "Utomhus/forstøtning",
+  "sporsmal": "Prosjekterer du forstøtningsmurer og utomhus-konstruksjoner mot terreng- og trafikklast?",
+  "hint": "",
+  "type": "ja_nei"
+ },
+ {
+  "id": 396,
+  "domene": "rib",
+  "kontekst": "rib.robusthet.strekkbaand",
+  "tema": "Strekkbånd",
+  "sporsmal": "Legger du inn kontinuerlige strekkbånd (ties) i dekker/vegger for sammenbinding mot kollaps?",
+  "hint": "",
+  "type": "ja_nei"
  }
 ]
