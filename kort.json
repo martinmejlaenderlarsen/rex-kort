@@ -99,15 +99,6 @@
   "type": "tale"
  },
  {
-  "id": 292,
-  "domene": "rib",
-  "kontekst": "rib.klimagass",
-  "tema": "EPD",
-  "sporsmal": "Bruker du EPD-tall og klimagassregnskap (TEK17 §17) aktivt når du velger materiale og mengde?",
-  "hint": "",
-  "type": "ja_nei"
- },
- {
   "id": 293,
   "domene": "rib",
   "kontekst": "rib.klimagass",
