@@ -2950,5 +2950,428 @@
   "sporsmal": "Beskriv hvordan du sikrer en gjennomgående lastnedføring fra tak til fundament.",
   "hint": "",
   "type": "tale"
+ },
+ {
+  "id": 930,
+  "domene": "rib",
+  "kontekst": "rib.laster.kombinasjon",
+  "tema": "Lastkombinasjon",
+  "sporsmal": "Kjører du både 6.10a og 6.10b (NS-EN 1990) framfor den forenklede 6.10 for bæreevne i bruddgrense?",
+  "hint": "6.10a/b gir ofte slankere dimensjoner.",
+  "type": "ja_nei"
+ },
+ {
+  "id": 931,
+  "domene": "rib",
+  "kontekst": "rib.laster.nytte",
+  "tema": "Nyttelastreduksjon",
+  "sporsmal": "Bruker du αn-reduksjon av nyttelast på søyler/fundament som bærer mange etasjer?",
+  "hint": "NS-EN 1991-1-1 §6.3.1.2.",
+  "type": "ja_nei"
+ },
+ {
+  "id": 932,
+  "domene": "rib",
+  "kontekst": "rib.laster.samtidig",
+  "tema": "Samtidighet",
+  "sporsmal": "Setter du snø og full vind som samtidige hovedlaster i samme kombinasjon?",
+  "hint": "ψ-faktorer styrer samtidighet.",
+  "type": "ja_nei"
+ },
+ {
+  "id": 933,
+  "domene": "rib",
+  "kontekst": "rib.snolast.fokk",
+  "tema": "Snøfokk",
+  "sporsmal": "Regner du med snøopphopning bak høydesprang og mot parapet, ikke bare jevn snølast?",
+  "hint": "NS-EN 1991-1-3 tillegg.",
+  "type": "ja_nei"
+ },
+ {
+  "id": 934,
+  "domene": "rib",
+  "kontekst": "rib.vindlast.indre",
+  "tema": "Indre vindtrykk",
+  "sporsmal": "Tar du med indre trykk-koeffisient (cpi) ved store åpninger/porter i fasaden?",
+  "hint": "Kan snu netto trykk på tak/vegg.",
+  "type": "ja_nei"
+ },
+ {
+  "id": 935,
+  "domene": "rib",
+  "kontekst": "rib.betong.fasthet",
+  "tema": "Betongklasse",
+  "sporsmal": "Er B35 startpunktet ditt for bærende betong, og du hever bare ved behov?",
+  "hint": "Bestandighet vs. klimagass.",
+  "type": "ja_nei"
+ },
+ {
+  "id": 936,
+  "domene": "rib",
+  "kontekst": "rib.betong.heft",
+  "tema": "Forankring",
+  "sporsmal": "Kontrollerer du forankringslengde og omfaringsskjøt eksplisitt, ikke bare snittkapasitet?",
+  "hint": "NS-EN 1992-1-1 §8.",
+  "type": "ja_nei"
+ },
+ {
+  "id": 937,
+  "domene": "rib",
+  "kontekst": "rib.armering.svinn",
+  "tema": "Svinnarmering",
+  "sporsmal": "Legger du minimumsarmering for rissstyring også der beregning ikke krever armering?",
+  "hint": "Svinn/temperatur i store flater.",
+  "type": "ja_nei"
+ },
+ {
+  "id": 938,
+  "domene": "rib",
+  "kontekst": "rib.armering.toleranse",
+  "tema": "Overdekningstoleranse",
+  "sporsmal": "Setter du cnom = cmin + 10 mm som toleransetillegg for plasstøpt på byggeplass?",
+  "hint": "Δcdev = 10 mm standard.",
+  "type": "ja_nei"
+ },
+ {
+  "id": 939,
+  "domene": "rib",
+  "kontekst": "rib.stal.tverrsnittsklasse",
+  "tema": "Tverrsnittsklasse",
+  "sporsmal": "Sjekker du tverrsnittsklasse (1–4) før du velger plastisk vs. elastisk kapasitet på stål?",
+  "hint": "Klasse 4 = lokal knekking.",
+  "type": "ja_nei"
+ },
+ {
+  "id": 940,
+  "domene": "rib",
+  "kontekst": "rib.stal.vipping",
+  "tema": "Vipping (LTB)",
+  "sporsmal": "Kontrollerer du vipping for frie stålbjelker uten kontinuerlig avstiving av trykkflens?",
+  "hint": "NS-EN 1993-1-1 §6.3.2.",
+  "type": "ja_nei"
+ },
+ {
+  "id": 941,
+  "domene": "rib",
+  "kontekst": "rib.stal.korrosjonsklasse",
+  "tema": "Korrosivitetsklasse",
+  "sporsmal": "Spesifiserer du korrosivitetsklasse (C1–C5) og overflatebehandling i RIB-underlaget?",
+  "hint": "NS-EN ISO 12944.",
+  "type": "ja_nei"
+ },
+ {
+  "id": 942,
+  "domene": "rib",
+  "kontekst": "rib.tre.limtreklasse",
+  "tema": "Limtreklasse",
+  "sporsmal": "Er GL30c standardvalget ditt for limtrebjelker, med oppgradering bare ved behov?",
+  "hint": "",
+  "type": "ja_nei"
+ },
+ {
+  "id": 943,
+  "domene": "rib",
+  "kontekst": "rib.tre.trykkvinkel",
+  "tema": "Trykk tvers fiber",
+  "sporsmal": "Er trykk vinkelrett på fiber (opplegg/knutepunkt) ofte det dimensjonerende i dine trekonstruksjoner?",
+  "hint": "Sviller, opplegg.",
+  "type": "ja_nei"
+ },
+ {
+  "id": 944,
+  "domene": "rib",
+  "kontekst": "rib.tre.brannavbrenning",
+  "tema": "Brannavbrenning",
+  "sporsmal": "Dimensjonerer du tre for brann med redusert-tverrsnitt-metoden framfor tabellverdier?",
+  "hint": "NS-EN 1995-1-2, β0/βn.",
+  "type": "ja_nei"
+ },
+ {
+  "id": 945,
+  "domene": "rib",
+  "kontekst": "rib.forbindelser.duktil",
+  "tema": "Duktile forbindelser",
+  "sporsmal": "Foretrekker du forbindelser som flyter duktilt (stål/dybler) framfor sprø brudd i tre?",
+  "hint": "Robusthet ved overlast.",
+  "type": "ja_nei"
+ },
+ {
+  "id": 946,
+  "domene": "rib",
+  "kontekst": "rib.forbindelser.boltsveis",
+  "tema": "Bolt vs sveis",
+  "sporsmal": "Er boltede knutepunkter førstevalget ditt framfor sveis på byggeplass?",
+  "hint": "Montasje + kontroll.",
+  "type": "ja_nei"
+ },
+ {
+  "id": 947,
+  "domene": "rib",
+  "kontekst": "rib.stabilitet.entydig",
+  "tema": "Avstivingssystem",
+  "sporsmal": "Låser du ett entydig avstivingssystem per retning tidlig, framfor diffus stabilitet?",
+  "hint": "Kjerne/skiver/fagverk.",
+  "type": "ja_nei"
+ },
+ {
+  "id": 948,
+  "domene": "rib",
+  "kontekst": "rib.stabilitet.diafragma",
+  "tema": "Skivevirkning",
+  "sporsmal": "Kontrollerer du at dekket virker som stiv skive og fører horisontallast til avstivingen?",
+  "hint": "Fuger i hulldekke.",
+  "type": "ja_nei"
+ },
+ {
+  "id": 949,
+  "domene": "rib",
+  "kontekst": "rib.andreorden.imperfeksjon",
+  "tema": "Imperfeksjoner",
+  "sporsmal": "Legger du inn globale skjevstillinger (initialimperfeksjoner) i stabilitetsanalysen?",
+  "hint": "φ0 = 1/200 utgangspunkt.",
+  "type": "ja_nei"
+ },
+ {
+  "id": 950,
+  "domene": "rib",
+  "kontekst": "rib.andreorden.acr",
+  "tema": "αcr-grense",
+  "sporsmal": "Bruker du αcr ≥ 10 som grense for å se bort fra andreordenseffekter?",
+  "hint": "NS-EN 1993-1-1 §5.2.1.",
+  "type": "ja_nei"
+ },
+ {
+  "id": 951,
+  "domene": "rib",
+  "kontekst": "rib.fundament.kjerne",
+  "tema": "Grunntrykk",
+  "sporsmal": "Krever du at resultanten holder seg i kjernen (ingen strekk i sålefot) for direktefundament?",
+  "hint": "e ≤ B/6.",
+  "type": "ja_nei"
+ },
+ {
+  "id": 952,
+  "domene": "rib",
+  "kontekst": "rib.fundament.glidning",
+  "tema": "Gliding/velting",
+  "sporsmal": "Sjekker du gliding og velting som egne grensetilstander for fundament med horisontallast?",
+  "hint": "GEO/EQU.",
+  "type": "ja_nei"
+ },
+ {
+  "id": 953,
+  "domene": "rib",
+  "kontekst": "rib.peler.negativfriksjon",
+  "tema": "Negativ friksjon",
+  "sporsmal": "Tar du med negativ mantelfriksjon på peler i setningsømfintlig grunn?",
+  "hint": "Fylling drar pelen ned.",
+  "type": "ja_nei"
+ },
+ {
+  "id": 954,
+  "domene": "rib",
+  "kontekst": "rib.geoteknikk.faktorsett",
+  "tema": "Partialfaktorsett",
+  "sporsmal": "Avklarer du hvilket geoteknisk faktorsett (DA) som brukes før du dimensjonerer fundamentet?",
+  "hint": "",
+  "type": "ja_nei"
+ },
+ {
+  "id": 955,
+  "domene": "rib",
+  "kontekst": "rib.setninger.differanse",
+  "tema": "Differansesetning",
+  "sporsmal": "Styrer du etter differansesetning (ikke absolutt) for å unngå konstruksjonsskader?",
+  "hint": "Vinkelvridning.",
+  "type": "ja_nei"
+ },
+ {
+  "id": 956,
+  "domene": "rib",
+  "kontekst": "rib.dekke.toveis",
+  "tema": "Toveis dekke",
+  "sporsmal": "Vurderer du toveis dekkevirkning når sidekantforholdet er under ca. 2?",
+  "hint": "Ellers enveis.",
+  "type": "ja_nei"
+ },
+ {
+  "id": 957,
+  "domene": "rib",
+  "kontekst": "rib.dekke.gjennomlokking",
+  "tema": "Gjennomlokking",
+  "sporsmal": "Er gjennomlokking rundt søyler det som oftest styrer flatdekketykkelsen din?",
+  "hint": "",
+  "type": "ja_nei"
+ },
+ {
+  "id": 958,
+  "domene": "rib",
+  "kontekst": "rib.dekke.hulldekkeskjaer",
+  "tema": "Hulldekke-skjær",
+  "sporsmal": "Kontrollerer du skjær i hulldekke mot leverandørens tabell, ikke bare egne formler?",
+  "hint": "Forspent, uten bøyler.",
+  "type": "ja_nei"
+ },
+ {
+  "id": 959,
+  "domene": "rib",
+  "kontekst": "rib.nedboyning.grenser",
+  "tema": "Nedbøyningsgrenser",
+  "sporsmal": "Bruker du L/250 total og L/500 skadelig (skillevegger) som standard SLS-grenser?",
+  "hint": "",
+  "type": "ja_nei"
+ },
+ {
+  "id": 960,
+  "domene": "rib",
+  "kontekst": "rib.krympkryp.langtid",
+  "tema": "Kryp i SLS",
+  "sporsmal": "Regner du nedbøyning med langtids-E (kryp) for betong i SLS, ikke bare korttids?",
+  "hint": "φ ≈ 2–3.",
+  "type": "ja_nei"
+ },
+ {
+  "id": 961,
+  "domene": "rib",
+  "kontekst": "rib.komfort.frekvens",
+  "tema": "Egenfrekvens",
+  "sporsmal": "Krever du egenfrekvens > 8 Hz for slanke gulv der komfort betyr noe?",
+  "hint": "Under → responssjekk.",
+  "type": "ja_nei"
+ },
+ {
+  "id": 962,
+  "domene": "rib",
+  "kontekst": "rib.robusthet.strekkbaand",
+  "tema": "Strekkbånd",
+  "sporsmal": "Legger du gjennomgående horisontale og vertikale strekkbånd som standard i CC2b?",
+  "hint": "Sammenbinding.",
+  "type": "ja_nei"
+ },
+ {
+  "id": 963,
+  "domene": "rib",
+  "kontekst": "rib.robusthet.nokkelelement",
+  "tema": "Nøkkelelement",
+  "sporsmal": "Dimensjonerer du nøkkelelementer for 34 kN/m² ulykkeslast der alternativ lastvei mangler?",
+  "hint": "",
+  "type": "ja_nei"
+ },
+ {
+  "id": 964,
+  "domene": "rib",
+  "kontekst": "rib.brann.lastnivaa",
+  "tema": "Brann-lastnivå",
+  "sporsmal": "Aksepterer du redusert lastnivå (ηfi ≈ 0,65) i brannkontroll framfor full ULS-last?",
+  "hint": "Reduksjonsfaktor for brann.",
+  "type": "ja_nei"
+ },
+ {
+  "id": 965,
+  "domene": "rib",
+  "kontekst": "rib.grensesnitt.rivlast",
+  "tema": "RIV-punktlaster",
+  "sporsmal": "Innhenter du vekt/plassering av aggregat og tanker fra RIV som punktlaster?",
+  "hint": "Tak/teknisk rom.",
+  "type": "ja_nei"
+ },
+ {
+  "id": 966,
+  "domene": "rib",
+  "kontekst": "rib.grensesnitt.fasadelast",
+  "tema": "Fasadelast",
+  "sporsmal": "Avklarer du fasadens egenvekt og innfesting på dekkekant/bjelke tidlig?",
+  "hint": "",
+  "type": "ja_nei"
+ },
+ {
+  "id": 967,
+  "domene": "rib",
+  "kontekst": "rib.utsparinger.grense",
+  "tema": "Utsparingsgrense",
+  "sporsmal": "Har du en grense der utsparinger må omkantarmeres eller forsterkes særskilt?",
+  "hint": "",
+  "type": "ja_nei"
+ },
+ {
+  "id": 968,
+  "domene": "rib",
+  "kontekst": "rib.prefab.opplegg",
+  "tema": "Prefab-opplegg",
+  "sporsmal": "Krever du minimum opplagslengde + mykt opplegg (neopren) spesifisert på prefab?",
+  "hint": "Ellers kantsprekk.",
+  "type": "ja_nei"
+ },
+ {
+  "id": 969,
+  "domene": "rib",
+  "kontekst": "rib.montasje.rekkefolge",
+  "tema": "Montasjestabilitet",
+  "sporsmal": "Angir du midlertidig avstiving og montasjerekkefølge i produksjonsunderlaget?",
+  "hint": "",
+  "type": "ja_nei"
+ },
+ {
+  "id": 970,
+  "domene": "rib",
+  "kontekst": "rib.dokumentasjon.forutsetning",
+  "tema": "Forutsetningsnotat",
+  "sporsmal": "Skriver du et forutsetningsnotat (laster, klasser, antakelser) før beregningene?",
+  "hint": "Sporbarhet.",
+  "type": "ja_nei"
+ },
+ {
+  "id": 971,
+  "domene": "rib",
+  "kontekst": "rib.kontroll.klasse",
+  "tema": "Kontrollklasse",
+  "sporsmal": "Setter du prosjekterings- og utførelseskontrollklasse bevisst ut fra pålitelighetsklassen?",
+  "hint": "KFI, NS-EN 1990 NA.",
+  "type": "ja_nei"
+ },
+ {
+  "id": 972,
+  "domene": "rib",
+  "kontekst": "rib.beregningsverktoy.handkontroll",
+  "tema": "FEM-validering",
+  "sporsmal": "Håndkontrollerer du FEM-resultater mot en enkel likevekts- eller overslagsberegning?",
+  "hint": "Fang input-feil.",
+  "type": "ja_nei"
+ },
+ {
+  "id": 973,
+  "domene": "rib",
+  "kontekst": "rib.miljo.lavkarbonklasse",
+  "tema": "Lavkarbonklasse",
+  "sporsmal": "Spesifiserer du lavkarbonklasse (A/B) på betong der eksponering/fasthet tillater det?",
+  "hint": "NB 37.",
+  "type": "ja_nei"
+ },
+ {
+  "id": 974,
+  "domene": "rib",
+  "kontekst": "rib.ombruk.stal",
+  "tema": "Ombrukt stål",
+  "sporsmal": "Vurderer du ombrukt stål der materialegenskaper kan dokumenteres/sertifiseres?",
+  "hint": "CE-merking mangler ofte.",
+  "type": "ja_nei"
+ },
+ {
+  "id": 975,
+  "domene": "rib",
+  "kontekst": "rib.tale.terskler",
+  "tema": "Egne terskler",
+  "sporsmal": "Fortell om tommelfingerreglene og tersklene du faktisk bruker i tidligfase (spenn, tykkelser) — dine egne, ikke lærebokas.",
+  "hint": "Snakk fritt.",
+  "type": "tale"
+ },
+ {
+  "id": 976,
+  "domene": "rib",
+  "kontekst": "rib.tale.konflikt",
+  "tema": "Fag-konflikter",
+  "sporsmal": "Hvor oppstår de dyreste RIB-konfliktene sent i prosjektet, og hvordan forebygger du dem?",
+  "hint": "",
+  "type": "tale"
  }
 ]
